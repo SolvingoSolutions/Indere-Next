@@ -9,23 +9,23 @@ import {
 } from '@teleporthq/cms-mappers/caisy'
 import { useTranslations } from 'next-intl'
 
-const Video1 = (props) => {
+const Video11 = (props) => {
   return (
     <>
-      <div className="video1-container1">
+      <div className="video11-container1">
         <Head>
-          <title>Video - Indere</title>
-          <meta property="og:title" content="Video - Indere" />
+          <title>Video1 - Indere</title>
+          <meta property="og:title" content="Video1 - Indere" />
         </Head>
         <DataProvider
           renderSuccess={(params) => (
             <Fragment>
-              <div className="video1-container2">
+              <div className="video11-container2">
                 <Repeater
                   items={params}
                   renderItem={(VideoEntities) => (
                     <Fragment>
-                      <div className="video1-container3">
+                      <div className="video11-container3">
                         <span>{VideoEntities?.vimeoVideoId}</span>
                         <span>{VideoEntities?.id}</span>
                       </div>
@@ -42,18 +42,18 @@ const Video1 = (props) => {
       </div>
       <style jsx>
         {`
-          .video1-container1 {
+          .video11-container1 {
             width: 100%;
             display: flex;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
           }
-          .video1-container2 {
+          .video11-container2 {
             display: flex;
             flex-direction: column;
           }
-          .video1-container3 {
+          .video11-container3 {
             gap: 12px;
             width: 100%;
             display: flex;
@@ -66,15 +66,15 @@ const Video1 = (props) => {
   )
 }
 
-Video1.defaultProps = {
+Video11.defaultProps = {
   videoEntities: [],
 }
 
-Video1.propTypes = {
+Video11.propTypes = {
   videoEntities: PropTypes.array,
 }
 
-export default Video1
+export default Video11
 
 export async function getStaticProps(context) {
   try {

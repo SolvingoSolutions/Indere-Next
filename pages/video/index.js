@@ -6,23 +6,23 @@ import PropTypes from 'prop-types'
 import { getEntitiesWithPagination } from '@teleporthq/cms-mappers/caisy'
 import { useTranslations } from 'next-intl'
 
-const Video = (props) => {
+const Video1 = (props) => {
   return (
     <>
-      <div className="video-container1">
+      <div className="video1-container1">
         <Head>
-          <title>Video - Indere</title>
-          <meta property="og:title" content="Video - Indere" />
+          <title>Video1 - Indere</title>
+          <meta property="og:title" content="Video1 - Indere" />
         </Head>
         <DataProvider
           renderSuccess={(params) => (
             <Fragment>
-              <div className="video-container2">
+              <div className="video1-container2">
                 <Repeater
                   items={params}
                   renderItem={(VideoEntities) => (
                     <Fragment>
-                      <div className="video-container3">
+                      <div className="video1-container3">
                         <span>{VideoEntities?.vimeoVideoId}</span>
                         <span>{VideoEntities?.id}</span>
                       </div>
@@ -39,18 +39,18 @@ const Video = (props) => {
       </div>
       <style jsx>
         {`
-          .video-container1 {
+          .video1-container1 {
             width: 100%;
             display: flex;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
           }
-          .video-container2 {
+          .video1-container2 {
             display: flex;
             flex-direction: column;
           }
-          .video-container3 {
+          .video1-container3 {
             gap: 12px;
             width: 100%;
             display: flex;
@@ -63,15 +63,15 @@ const Video = (props) => {
   )
 }
 
-Video.defaultProps = {
+Video1.defaultProps = {
   videoEntities: [],
 }
 
-Video.propTypes = {
+Video1.propTypes = {
   videoEntities: PropTypes.array,
 }
 
-export default Video
+export default Video1
 
 export async function getStaticProps(context) {
   try {

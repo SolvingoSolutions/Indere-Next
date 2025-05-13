@@ -68,7 +68,7 @@ export async function getStaticProps(context) {
       ...context?.params,
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
-        'query MyQuery($locale:String){Footer(locale:$locale){_meta{createdAt updatedAt id}title sections{__typename...on CompFooterSection{_meta{createdAt updatedAt id}links{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}sectionTitle}}legalSection{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}}}',
+        'query Footer($value:ID!,$locale:String){Footer(id:$value,locale:$locale){_meta{createdAt updatedAt id}title sections{__typename...on CompFooterSection{_meta{createdAt updatedAt id}links{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}sectionTitle}}legalSection{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}}}',
       attribute: 'id',
       locale: context?.locale ?? '',
     })
@@ -96,7 +96,7 @@ export async function getStaticPaths() {
   try {
     const response = await getEntities({
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
-      query: '{Footer{id}}',
+      query: '{allFooter{edges{node{id}}}}',
       locale: context?.locale ?? '',
     })
     return {

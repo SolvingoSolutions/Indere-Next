@@ -9,18 +9,18 @@ import {
 } from '@teleporthq/cms-mappers/caisy'
 import { useTranslations } from 'next-intl'
 
-const Video11 = (props) => {
+const Video = (props) => {
   return (
     <>
-      <div className="video11-container1">
+      <div className="video-container1">
         <Head>
-          <title>Video1 - Indere</title>
-          <meta property="og:title" content="Video1 - Indere" />
+          <title>Video - Indere</title>
+          <meta property="og:title" content="Video - Indere" />
         </Head>
         <DataProvider
           renderSuccess={(VideoEntity) => (
             <Fragment>
-              <div className="video11-container2">
+              <div className="video-container2">
                 <span>{VideoEntity?.vimeoVideoId}</span>
                 <span>{VideoEntity?.id}</span>
               </div>
@@ -33,14 +33,14 @@ const Video11 = (props) => {
       </div>
       <style jsx>
         {`
-          .video11-container1 {
+          .video-container1 {
             width: 100%;
             display: flex;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
           }
-          .video11-container2 {
+          .video-container2 {
             gap: 12px;
             width: 100%;
             display: flex;
@@ -52,15 +52,15 @@ const Video11 = (props) => {
   )
 }
 
-Video11.defaultProps = {
+Video.defaultProps = {
   videoEntity: [],
 }
 
-Video11.propTypes = {
+Video.propTypes = {
   videoEntity: PropTypes.array,
 }
 
-export default Video11
+export default Video
 
 export async function getStaticProps(context) {
   try {
