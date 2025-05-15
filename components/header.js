@@ -1,9 +1,13 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
+import { useGlobalContext } from '@/global-context'
+
 const Header = (props) => {
+  const { locale, locales } = useGlobalContext()
   return (
     <>
       <header className="header-header">
@@ -11,72 +15,93 @@ const Header = (props) => {
           <div className="header-left">
             <img
               alt={props.logoAlt}
-              src={props.logoSrc}
+              src="/logo-200h.jpg"
               className="header-logo"
             />
-            <nav className="header-links">
-              <a href="#features" className="header-link1">
-                {props.link ?? (
-                  <Fragment>
-                    <span className="header-text21">Features</span>
-                  </Fragment>
-                )}
-              </a>
-              <a href="#how-it-works" className="header-link2">
-                {props.link1 ?? (
-                  <Fragment>
-                    <span className="header-text26">How it works</span>
-                  </Fragment>
-                )}
-              </a>
-              <span className="header-link3">
-                {props.link2 ?? (
-                  <Fragment>
-                    <span className="header-text20">Prices</span>
-                  </Fragment>
-                )}
-              </span>
-              <a href="#schedule" className="header-link4">
-                {props.link3 ?? (
-                  <Fragment>
-                    <span className="header-text17">Contact</span>
-                  </Fragment>
-                )}
-              </a>
-            </nav>
           </div>
-          <div data-thq="thq-navbar-btn-group" className="header-right">
-            <button className="header-phone button">
-              <img
-                alt={props.imageAlt}
-                src={props.imageSrc}
-                className="header-image1"
-              />
-              <span className="header-text10">
-                {props.text ?? (
-                  <Fragment>
-                    <span className="header-text23">+0 123-456-789</span>
-                  </Fragment>
-                )}
-              </span>
-            </button>
-            <a href="#book" className="header-book1 button button-main">
-              <img
-                alt={props.imageAlt1}
-                src={props.imageSrc1}
-                className="header-image2"
-              />
-              <span className="header-text11">
-                {props.text1 ?? (
-                  <Fragment>
-                    <span className="header-text27">Book an appointment</span>
-                  </Fragment>
-                )}
-              </span>
-            </a>
+          <div className="header-container1">
+            <div data-thq="thq-navbar-btn-group" className="header-right">
+              <nav className="header-links">
+                <Link href="/">
+                  <a className="header-link2">Home</a>
+                </Link>
+                <span className="header-link3">
+                  {props.link5 ?? (
+                    <Fragment>
+                      <span className="header-text21">About US</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-link4">
+                  {props.link4 ?? (
+                    <Fragment>
+                      <span className="header-text20">Services</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-link5">
+                  {props.link1 ?? (
+                    <Fragment>
+                      <span className="header-text24">Scientific projects</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-link6">
+                  {props.link2 ?? (
+                    <Fragment>
+                      <span className="header-text18">Kapinfood</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-link7">
+                  {props.link3 ?? (
+                    <Fragment>
+                      <span className="header-text15">News</span>
+                    </Fragment>
+                  )}
+                </span>
+              </nav>
+              <div
+                data-thq="thq-dropdown"
+                className="header-language-switcher list-item"
+              >
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  className="header-language-switcher-toggle"
+                >
+                  <span className="header-language-name">
+                    {locale?.['name']}
+                  </span>
+                  <div
+                    data-thq="thq-dropdown-arrow"
+                    className="header-dropdown-arrow"
+                  >
+                    <svg viewBox="0 0 1024 1024" className="header-icon1">
+                      <path d="M426 726v-428l214 214z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <ul
+                  data-thq="thq-dropdown-list"
+                  className="header-language-switcher-list"
+                >
+                  <div>
+                    {locales.map((all_languages, index) => (
+                      <Fragment key={index}>
+                        <div className="header-language-switcher-item">
+                          <a href={props.languageLinkUrl}>
+                            {all_languages?.name}
+                          </a>
+                        </div>
+                      </Fragment>
+                    ))}
+                  </div>
+                </ul>
+              </div>
+            </div>
           </div>
           <div data-thq="thq-burger-menu" className="header-burger-menu">
-            <svg viewBox="0 0 1024 1024" className="header-icon1">
+            <svg viewBox="0 0 1024 1024" className="header-icon3">
               <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
             </svg>
           </div>
@@ -86,14 +111,14 @@ const Header = (props) => {
               data-role="Nav"
               className="header-nav1"
             >
-              <div className="header-container">
+              <div className="header-container3">
                 <img
                   alt={props.imageAlt2}
                   src={props.imageSrc2}
-                  className="header-image3"
+                  className="header-image1"
                 />
                 <div data-thq="thq-close-menu" className="header-menu-close">
-                  <svg viewBox="0 0 1024 1024" className="header-icon3">
+                  <svg viewBox="0 0 1024 1024" className="header-icon5">
                     <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                   </svg>
                 </div>
@@ -103,44 +128,44 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-nav2"
               >
-                <span className="header-text12">
+                <span className="header-text10">
                   {props.text2 ?? (
                     <Fragment>
-                      <span className="header-text22">Features</span>
+                      <span className="header-text19">Features</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-text11">
+                  {props.text3 ?? (
+                    <Fragment>
+                      <span className="header-text16">How it works</span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-text12">
+                  {props.text4 ?? (
+                    <Fragment>
+                      <span className="header-text23">Prices</span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-text13">
-                  {props.text3 ?? (
-                    <Fragment>
-                      <span className="header-text18">How it works</span>
-                    </Fragment>
-                  )}
-                </span>
-                <span className="header-text14">
-                  {props.text4 ?? (
-                    <Fragment>
-                      <span className="header-text25">Prices</span>
-                    </Fragment>
-                  )}
-                </span>
-                <span className="header-text15">
                   {props.text5 ?? (
                     <Fragment>
-                      <span className="header-text24">Contact</span>
+                      <span className="header-text22">Contact</span>
                     </Fragment>
                   )}
                 </span>
-                <a href="#book" className="header-book2 button button-main">
+                <a href="#book" className="header-book button button-main">
                   <img
                     alt={props.imageAlt3}
                     src={props.imageSrc3}
-                    className="header-image4"
+                    className="header-image2"
                   />
-                  <span className="header-text16">
+                  <span className="header-text14">
                     {props.text6 ?? (
                       <Fragment>
-                        <span className="header-text19">
+                        <span className="header-text17">
                           Book an appointment
                         </span>
                       </Fragment>
@@ -182,22 +207,26 @@ const Header = (props) => {
             width: 165px;
             object-fit: cover;
           }
+          .header-container1 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: space-between;
+            flex-direction: column;
+          }
+          .header-right {
+            gap: var(--dl-layout-space-oneandhalfunits);
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+          }
           .header-links {
             gap: var(--dl-layout-space-oneandhalfunits);
             display: flex;
             align-items: center;
             justify-content: center;
-          }
-          .header-link1 {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-            text-decoration: none;
-          }
-          .header-link1:hover {
-            opacity: 0.5;
           }
           .header-link2 {
             cursor: pointer;
@@ -226,52 +255,108 @@ const Header = (props) => {
             transition: 0.3s;
             font-weight: 500;
             line-height: 24px;
-            text-decoration: none;
           }
           .header-link4:hover {
             opacity: 0.5;
           }
-          .header-right {
-            gap: var(--dl-layout-space-oneandhalfunits);
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: center;
-          }
-          .header-phone {
-            gap: var(--dl-layout-space-halfunit);
+          .header-link5 {
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            border-width: 0px;
-            flex-direction: row;
-            justify-content: center;
-          }
-          .header-image1 {
-            width: 18px;
-            object-fit: cover;
-          }
-          .header-text10 {
             font-style: normal;
-            font-weight: 600;
+            transition: 0.3s;
+            font-weight: 500;
             line-height: 24px;
           }
-          .header-book1 {
-            text-decoration: none;
+          .header-link5:hover {
+            opacity: 0.5;
           }
-          .header-image2 {
+          .header-link6 {
+            cursor: pointer;
+            font-style: normal;
+            transition: 0.3s;
+            font-weight: 500;
+            line-height: 24px;
+          }
+          .header-link6:hover {
+            opacity: 0.5;
+          }
+          .header-link7 {
+            cursor: pointer;
+            font-style: normal;
+            transition: 0.3s;
+            font-weight: 500;
+            line-height: 24px;
+          }
+          .header-link7:hover {
+            opacity: 0.5;
+          }
+          .header-language-switcher {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            border-radius: var(--dl-layout-radius-radius2);
+          }
+          .header-language-switcher-toggle {
+            fill: #595959;
+            color: #595959;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            padding-top: var(--dl-layout-space-halfunit);
+            padding-left: var(--dl-layout-space-unit);
+            border-radius: var(--dl-layout-radius-radius2);
+            padding-right: var(--dl-layout-space-unit);
+            padding-bottom: var(--dl-layout-space-halfunit);
+          }
+          .header-language-name {
+            font-size: 14px;
+            font-style: normal;
+            text-align: center;
+            font-weight: 500;
+            margin-right: 4px;
+            vertical-align: middle;
+          }
+          .header-dropdown-arrow {
+            transition: 0.3s;
+          }
+          .header-icon1 {
             width: 18px;
-            object-fit: cover;
+            height: 18px;
+            transition: 0.3s;
           }
-          .header-text11 {
-            font-family: Inter;
+          .header-language-switcher-list {
+            left: 0%;
+            width: max-content;
+            display: none;
+            z-index: 100;
+            position: absolute;
+            min-width: 100%;
+            transition: 0.3s;
+            align-items: stretch;
+            border-color: #d9d9d9;
+            border-width: 1px;
+            border-radius: var(--dl-layout-radius-radius4);
+            flex-direction: column;
+            list-style-type: none;
+            list-style-position: inside;
+          }
+          .header-language-switcher-item {
+            flex: 0 0 auto;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            padding-top: var(--dl-layout-space-halfunit);
+            padding-left: var(--dl-layout-space-unit);
+            padding-right: var(--dl-layout-space-unit);
+            flex-direction: column;
+            padding-bottom: var(--dl-layout-space-halfunit);
+            background-color: #fff;
           }
           .header-burger-menu {
             display: none;
             align-items: center;
             justify-content: center;
           }
-          .header-icon1 {
+          .header-icon3 {
             width: var(--dl-layout-size-xsmall);
             height: var(--dl-layout-size-xsmall);
           }
@@ -293,14 +378,14 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .header-container {
+          .header-container3 {
             width: 100%;
             display: flex;
             align-items: center;
             margin-bottom: var(--dl-layout-space-threeunits);
             justify-content: space-between;
           }
-          .header-image3 {
+          .header-image1 {
             height: 2rem;
           }
           .header-menu-close {
@@ -308,7 +393,7 @@ const Header = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .header-icon3 {
+          .header-icon5 {
             width: var(--dl-layout-size-xsmall);
             height: var(--dl-layout-size-xsmall);
           }
@@ -318,27 +403,33 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
+          .header-text10 {
+            margin-bottom: var(--dl-layout-space-unit);
+          }
+          .header-text11 {
+            margin-bottom: var(--dl-layout-space-unit);
+          }
           .header-text12 {
             margin-bottom: var(--dl-layout-space-unit);
           }
           .header-text13 {
             margin-bottom: var(--dl-layout-space-unit);
           }
-          .header-text14 {
-            margin-bottom: var(--dl-layout-space-unit);
-          }
-          .header-text15 {
-            margin-bottom: var(--dl-layout-space-unit);
-          }
-          .header-book2 {
+          .header-book {
             text-decoration: none;
           }
-          .header-image4 {
+          .header-image2 {
             width: 18px;
             object-fit: cover;
           }
-          .header-text16 {
+          .header-text14 {
             font-family: Inter;
+          }
+          .header-text15 {
+            display: inline-block;
+          }
+          .header-text16 {
+            display: inline-block;
           }
           .header-text17 {
             display: inline-block;
@@ -364,23 +455,14 @@ const Header = (props) => {
           .header-text24 {
             display: inline-block;
           }
-          .header-text25 {
-            display: inline-block;
-          }
-          .header-text26 {
-            display: inline-block;
-          }
-          .header-text27 {
-            display: inline-block;
-          }
           @media (max-width: 991px) {
             .header-navbar {
               z-index: 1000;
             }
-            .header-links {
+            .header-right {
               display: none;
             }
-            .header-right {
+            .header-links {
               display: none;
             }
             .header-burger-menu {
@@ -389,7 +471,7 @@ const Header = (props) => {
               border-radius: var(--dl-layout-radius-round);
               background-color: #2461ff;
             }
-            .header-icon1 {
+            .header-icon3 {
               fill: white;
             }
           }
@@ -422,23 +504,18 @@ Header.defaultProps = {
   text3: undefined,
   text6: undefined,
   link2: undefined,
-  link: undefined,
-  imageAlt: 'image',
-  imageSrc1: '/Icons/calendar.svg',
   logoAlt: 'image',
   text2: undefined,
-  text: undefined,
-  imageSrc: '/Icons/phone.svg',
+  link4: undefined,
   imageSrc3: '/Icons/calendar.svg',
   imageAlt2: 'image',
+  link5: undefined,
   text5: undefined,
   imageAlt3: 'image',
-  logoSrc: '/Branding/logo-1500h.png',
   imageSrc2: '/Branding/logo-1500h.png',
   text4: undefined,
   link1: undefined,
-  text1: undefined,
-  imageAlt1: 'image',
+  languageLinkUrl: 'https://www.teleporthq.io',
 }
 
 Header.propTypes = {
@@ -446,23 +523,18 @@ Header.propTypes = {
   text3: PropTypes.element,
   text6: PropTypes.element,
   link2: PropTypes.element,
-  link: PropTypes.element,
-  imageAlt: PropTypes.string,
-  imageSrc1: PropTypes.string,
   logoAlt: PropTypes.string,
   text2: PropTypes.element,
-  text: PropTypes.element,
-  imageSrc: PropTypes.string,
+  link4: PropTypes.element,
   imageSrc3: PropTypes.string,
   imageAlt2: PropTypes.string,
+  link5: PropTypes.element,
   text5: PropTypes.element,
   imageAlt3: PropTypes.string,
-  logoSrc: PropTypes.string,
   imageSrc2: PropTypes.string,
   text4: PropTypes.element,
   link1: PropTypes.element,
-  text1: PropTypes.element,
-  imageAlt1: PropTypes.string,
+  languageLinkUrl: PropTypes.string,
 }
 
 export default Header
