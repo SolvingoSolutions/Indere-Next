@@ -23,7 +23,7 @@ const Header = (props) => {
           <div className="header-container1">
             <div data-thq="thq-navbar-btn-group" className="header-right">
               <nav className="header-links">
-                <Link href="/">
+                <Link href="/home">
                   <a className="header-link2">
                     <span
                       dangerouslySetInnerHTML={{
@@ -32,7 +32,7 @@ const Header = (props) => {
                     ></span>
                   </a>
                 </Link>
-                <Link href="/home-src">
+                <Link href="/">
                   <a className="header-link4">
                     {props.link5 ?? (
                       <Fragment>

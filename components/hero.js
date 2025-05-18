@@ -8,60 +8,62 @@ const Hero = (props) => {
   return (
     <>
       <div className="hero-container1 hero">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            {props.heading ?? (
-              <Fragment>
-                <span className="hero-text7">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_Q2bUsT'),
-                    }}
-                  ></span>
-                </span>
-              </Fragment>
-            )}
-          </h1>
-          <p className="hero-subtitle">
-            {props.text ?? (
-              <Fragment>
-                <span className="hero-text6">
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: translate.raw('text_p3IzkY'),
-                    }}
-                  ></span>
-                </span>
-              </Fragment>
-            )}
-          </p>
-          <div className="hero-buttons">
-            <span className="btn btn-primary">
-              {props.text1 ?? (
-                <Fragment>
-                  <span className="hero-text8">
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: translate.raw('text_CaeYuD'),
-                      }}
-                    ></span>
-                  </span>
-                </Fragment>
-              )}
-            </span>
-            <span className="btn btn-secondary">
-              {props.text2 ?? (
+        <div className="hero-section">
+          <div className="hero-content">
+            <h1 className="hero-title">
+              {props.heading1 ?? (
                 <Fragment>
                   <span className="hero-text5">
                     <span
                       dangerouslySetInnerHTML={{
-                        __html: translate.raw('text_NWzZOY'),
+                        __html: translate.raw('text_Gtdc10'),
                       }}
                     ></span>
                   </span>
                 </Fragment>
               )}
-            </span>
+            </h1>
+            <p className="hero-subtitle">
+              {props.text3 ?? (
+                <Fragment>
+                  <span className="hero-text6">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_rr9V4_'),
+                      }}
+                    ></span>
+                  </span>
+                </Fragment>
+              )}
+            </p>
+            <div className="hero-buttons">
+              <span className="hero-btn hero-btn-primary">
+                {props.text4 ?? (
+                  <Fragment>
+                    <span className="hero-text7">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_Pw_tN7'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                )}
+              </span>
+              <span className="hero-btn hero-btn-secondary">
+                {props.text5 ?? (
+                  <Fragment>
+                    <span className="hero-text8">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_8fp087'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                )}
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -89,17 +91,17 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
-  text2: undefined,
-  text: undefined,
-  heading: undefined,
-  text1: undefined,
+  heading1: undefined,
+  text3: undefined,
+  text4: undefined,
+  text5: undefined,
 }
 
 Hero.propTypes = {
-  text2: PropTypes.element,
-  text: PropTypes.element,
-  heading: PropTypes.element,
-  text1: PropTypes.element,
+  heading1: PropTypes.element,
+  text3: PropTypes.element,
+  text4: PropTypes.element,
+  text5: PropTypes.element,
 }
 
 export default Hero

@@ -14,9 +14,9 @@ const Home1 = (props) => {
             <React.Fragment>
               <Script>{`
               (function(){
-  document.querySelectorAll(".filter-btn").forEach((button) => {
+  document.querySelectorAll(".blog-filter-btn").forEach((button) => {
     button.addEventListener("click", function () {
-      document.querySelectorAll(".filter-btn").forEach((btn) => {
+      document.querySelectorAll(".blog-filter-btn").forEach((btn) => {
         btn.classList.remove("active")
       })
       this.classList.add("active")
@@ -29,449 +29,253 @@ const Home1 = (props) => {
             </React.Fragment>
           </div>
         </div>
-        <div className="page">
-          <div className="content-wrapper">
-            <section className="research-focus">
-              <div className="container">
-                <h2 className="section-title">
-                  {props.heading ?? (
+        <section className="research-section">
+          <div className="research-container">
+            <h2 className="research-title">
+              {props.heading12 ?? (
+                <Fragment>
+                  <span className="home1-text43">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_MVwZmA'),
+                      }}
+                    ></span>
+                  </span>
+                </Fragment>
+              )}
+            </h2>
+            <div className="research-focus-areas">
+              <div className="research-card">
+                <div className="research-icon">
+                  <img src={props.imageSrc11} alt={props.imageAlt11} />
+                </div>
+                <h3>
+                  {props.heading13 ?? (
                     <Fragment>
-                      <span className="home1-text58">
+                      <span className="home1-text44">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: translate.raw('text_RJymKr'),
+                            __html: translate.raw('text_tt0Wvm'),
                           }}
                         ></span>
                       </span>
                     </Fragment>
                   )}
-                </h2>
-                <div className="focus-areas">
-                  <div className="focus-card">
-                    <div className="focus-icon">
-                      <img alt={props.imageAlt4} src={props.imageSrc4} />
-                    </div>
-                    <h3>
-                      {props.heading5 ?? (
-                        <Fragment>
-                          <span className="home1-text52">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_WAkMlv'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </h3>
-                    <p>
-                      {props.text2 ?? (
-                        <Fragment>
-                          <span className="home1-text49">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_7dQCyQ'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </p>
-                  </div>
-                  <div className="focus-card">
-                    <div className="focus-icon">
-                      <img alt={props.imageAlt5} src={props.imageSrc5} />
-                    </div>
-                    <h3>
-                      {props.heading6 ?? (
-                        <Fragment>
-                          <span className="home1-text68">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_NOBWLO'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </h3>
-                    <p>
-                      {props.text3 ?? (
-                        <Fragment>
-                          <span className="home1-text46">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_07Lq4f'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </p>
-                  </div>
-                  <div className="focus-card">
-                    <div className="focus-icon">
-                      <img alt={props.imageAlt6} src={props.imageSrc6} />
-                    </div>
-                    <h3>
-                      {props.heading7 ?? (
-                        <Fragment>
-                          <span className="home1-text73">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_Mnhk1t'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </h3>
-                    <p>
-                      {props.text4 ?? (
-                        <Fragment>
-                          <span className="home1-text64">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_VcjVaM'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </p>
-                  </div>
-                </div>
+                </h3>
+                <p>
+                  {props.text17 ?? (
+                    <Fragment>
+                      <span className="home1-text45">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_oFiZNu'),
+                          }}
+                        ></span>
+                      </span>
+                    </Fragment>
+                  )}
+                </p>
               </div>
-            </section>
-            <section className="blog-section">
-              <div className="container">
-                <h2 className="section-title">
-                  {props.heading1 ?? (
+              <div className="research-card">
+                <div className="research-icon">
+                  <img src={props.imageSrc12} alt={props.imageAlt12} />
+                </div>
+                <h3>
+                  {props.heading14 ?? (
                     <Fragment>
-                      <span className="home1-text70">
+                      <span className="home1-text46">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: translate.raw('text_yMkz4x'),
+                            __html: translate.raw('text_gs0jh3'),
                           }}
                         ></span>
                       </span>
                     </Fragment>
                   )}
-                </h2>
-                <div className="blog-filter">
-                  <button
-                    data-filter="all"
-                    className="active filter-btn button"
-                  >
-                    <span>
-                      {props.button ?? (
-                        <Fragment>
-                          <span className="home1-text67">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_n1aoOS'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </span>
-                  </button>
-                  <button data-filter="catering" className="filter-btn button">
-                    <span>
-                      {props.button1 ?? (
-                        <Fragment>
-                          <span className="home1-text61">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_xku687'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </span>
-                  </button>
-                  <button
-                    data-filter="innovations"
-                    className="filter-btn button"
-                  >
-                    <span>
-                      {props.button2 ?? (
-                        <Fragment>
-                          <span className="home1-text60">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_BuTkCl'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </span>
-                  </button>
-                  <button data-filter="research" className="filter-btn button">
-                    <span>
-                      {props.button3 ?? (
-                        <Fragment>
-                          <span className="home1-text53">
-                            <span
-                              dangerouslySetInnerHTML={{
-                                __html: translate.raw('text_Oj9y2-'),
-                              }}
-                            ></span>
-                          </span>
-                        </Fragment>
-                      )}
-                    </span>
-                  </button>
+                </h3>
+                <p>
+                  {props.text18 ?? (
+                    <Fragment>
+                      <span className="home1-text47">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_slQPC6'),
+                          }}
+                        ></span>
+                      </span>
+                    </Fragment>
+                  )}
+                </p>
+              </div>
+              <div className="research-card">
+                <div className="research-icon">
+                  <img src={props.imageSrc13} alt={props.imageAlt13} />
                 </div>
-                <div className="blog-grid">
-                  <article className="blog-card">
-                    <div className="blog-image">
-                      <img alt={props.imageAlt7} src={props.imageSrc7} />
-                    </div>
-                    <div className="blog-content">
-                      <span className="blog-date">
-                        {props.text5 ?? (
-                          <Fragment>
-                            <span className="home1-text72">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_eIuXBi'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                <h3>
+                  {props.heading15 ?? (
+                    <Fragment>
+                      <span className="home1-text48">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_7kKz4S'),
+                          }}
+                        ></span>
                       </span>
-                      <h3 className="blog-title">
-                        {props.heading8 ?? (
-                          <Fragment>
-                            <span className="home1-text45">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_gj579h'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </h3>
-                      <p className="blog-excerpt">
-                        {props.text6 ?? (
-                          <Fragment>
-                            <span className="home1-text75">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_7T6W2G'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </p>
-                      <span className="blog-link">
-                        {props.text7 ?? (
-                          <Fragment>
-                            <span className="home1-text43">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_DmMoHF'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                    </Fragment>
+                  )}
+                </h3>
+                <p>
+                  {props.text19 ?? (
+                    <Fragment>
+                      <span className="home1-text49">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_XdJnyY'),
+                          }}
+                        ></span>
                       </span>
-                    </div>
-                  </article>
-                  <article className="blog-card">
-                    <div className="blog-image">
-                      <img alt={props.imageAlt8} src={props.imageSrc8} />
-                    </div>
-                    <div className="blog-content">
-                      <span className="blog-date">
-                        {props.text8 ?? (
-                          <Fragment>
-                            <span className="home1-text51">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_0nQ1Jx'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                    </Fragment>
+                  )}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="blog-section">
+          <div className="blog-container">
+            <h2 className="blog-title">
+              {props.heading16 ?? (
+                <Fragment>
+                  <span className="home1-text50">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_7diw1E'),
+                      }}
+                    ></span>
+                  </span>
+                </Fragment>
+              )}
+            </h2>
+            <div className="blog-filter">
+              <button
+                data-filter="all"
+                className="blog-filter-btn button active"
+              >
+                <span>
+                  {props.button4 ?? (
+                    <Fragment>
+                      <span className="home1-text51">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_cINsxK'),
+                          }}
+                        ></span>
                       </span>
-                      <h3 className="blog-title">
-                        {props.heading9 ?? (
-                          <Fragment>
-                            <span className="home1-text54">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_pYhvl-'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </h3>
-                      <p className="blog-excerpt">
-                        {props.text9 ?? (
-                          <Fragment>
-                            <span className="home1-text65">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_boFRuM'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </p>
-                      <span className="blog-link">
-                        {props.text10 ?? (
-                          <Fragment>
-                            <span className="home1-text56">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_tFgfo_'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                    </Fragment>
+                  )}
+                </span>
+              </button>
+              <button data-filter="catering" className="blog-filter-btn button">
+                <span>
+                  {props.button5 ?? (
+                    <Fragment>
+                      <span className="home1-text52">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_Jm9nNE'),
+                          }}
+                        ></span>
                       </span>
-                    </div>
-                  </article>
-                  <article className="blog-card">
-                    <div className="blog-image">
-                      <img alt={props.imageAlt9} src={props.imageSrc9} />
-                    </div>
-                    <div className="blog-content">
-                      <span className="blog-date">
-                        {props.text11 ?? (
-                          <Fragment>
-                            <span className="home1-text48">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_asgK4E'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                    </Fragment>
+                  )}
+                </span>
+              </button>
+              <button
+                data-filter="innovations"
+                className="blog-filter-btn button"
+              >
+                <span>
+                  {props.button6 ?? (
+                    <Fragment>
+                      <span className="home1-text53">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_59C9RI'),
+                          }}
+                        ></span>
                       </span>
-                      <h3 className="blog-title">
-                        {props.heading10 ?? (
-                          <Fragment>
-                            <span className="home1-text63">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_3TB0v-'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </h3>
-                      <p className="blog-excerpt">
-                        {props.text12 ?? (
-                          <Fragment>
-                            <span className="home1-text74">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_zcDF1Y'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </p>
-                      <span className="blog-link">
-                        {props.text13 ?? (
-                          <Fragment>
-                            <span className="home1-text55">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_VpNNKC'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
+                    </Fragment>
+                  )}
+                </span>
+              </button>
+              <button data-filter="research" className="blog-filter-btn button">
+                <span>
+                  {props.button7 ?? (
+                    <Fragment>
+                      <span className="home1-text54">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_LxoRaa'),
+                          }}
+                        ></span>
                       </span>
-                    </div>
-                  </article>
-                  <article className="blog-card">
-                    <div className="blog-image">
-                      <img alt={props.imageAlt10} src={props.imageSrc10} />
-                    </div>
-                    <div className="blog-content">
-                      <span className="blog-date">
-                        {props.text14 ?? (
-                          <Fragment>
-                            <span className="home1-text57">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_vt6cRE'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </span>
-                      <h3 className="blog-title">
-                        {props.heading11 ?? (
-                          <Fragment>
-                            <span className="home1-text50">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_V6d9o6'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </h3>
-                      <p className="blog-excerpt">
-                        {props.text15 ?? (
-                          <Fragment>
-                            <span className="home1-text59">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_c-nwLM'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </p>
-                      <span className="blog-link">
-                        {props.text16 ?? (
-                          <Fragment>
-                            <span className="home1-text62">
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: translate.raw('text_gqir_S'),
-                                }}
-                              ></span>
-                            </span>
-                          </Fragment>
-                        )}
-                      </span>
-                    </div>
-                  </article>
+                    </Fragment>
+                  )}
+                </span>
+              </button>
+            </div>
+            <div className="blog-grid">
+              <article className="blog-card">
+                <div className="blog-image">
+                  <img src={props.imageSrc14} alt={props.imageAlt14} />
                 </div>
-                <div className="blog-cta">
-                  <span className="btn btn-primary">
-                    {props.text ?? (
+                <div className="blog-content">
+                  <span className="blog-date">
+                    {props.text21 ?? (
                       <Fragment>
-                        <span className="home1-text47">
+                        <span className="home1-text56">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_diq9aB'),
+                              __html: translate.raw('text_Srah_a'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                  <h3 className="blog-title">
+                    {props.heading17 ?? (
+                      <Fragment>
+                        <span className="home1-text57">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_SNBJr8'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </h3>
+                  <p className="blog-excerpt">
+                    {props.text22 ?? (
+                      <Fragment>
+                        <span className="home1-text58">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_TS4jSc'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </p>
+                  <span className="blog-link">
+                    {props.text23 ?? (
+                      <Fragment>
+                        <span className="home1-text59">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_k7O4Xn'),
                             }}
                           ></span>
                         </span>
@@ -479,96 +283,288 @@ const Home1 = (props) => {
                     )}
                   </span>
                 </div>
-              </div>
-            </section>
-            <section className="video-section">
-              <div className="container">
-                <h2 className="section-title">
-                  {props.heading2 ?? (
-                    <Fragment>
-                      <span className="home1-text44">
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: translate.raw('text_QxFn_m'),
-                          }}
-                        ></span>
-                      </span>
-                    </Fragment>
-                  )}
-                </h2>
-                <div className="video-container">
-                  <div className="video-wrapper">
-                    <iframe
-                      src="https://www.youtube.com/embed/VIDEO_ID"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      title="Food Control Research"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+              </article>
+              <article className="blog-card">
+                <div className="blog-image">
+                  <img src={props.imageSrc15} alt={props.imageAlt15} />
                 </div>
-                <div className="video-text">
-                  <h3>
-                    {props.heading4 ?? (
+                <div className="blog-content">
+                  <span className="blog-date">
+                    {props.text24 ?? (
                       <Fragment>
-                        <span className="home1-text66">
+                        <span className="home1-text60">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_j6_ZU1'),
+                              __html: translate.raw('text_gANibL'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                  <h3 className="blog-title">
+                    {props.heading18 ?? (
+                      <Fragment>
+                        <span className="home1-text61">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_1NMctm'),
                             }}
                           ></span>
                         </span>
                       </Fragment>
                     )}
                   </h3>
-                  <p>
-                    {props.text1 ?? (
+                  <p className="blog-excerpt">
+                    {props.text25 ?? (
                       <Fragment>
-                        <span className="home1-text69">
+                        <span className="home1-text62">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_SemKPk'),
+                              __html: translate.raw('text_w1GO5r'),
                             }}
                           ></span>
                         </span>
                       </Fragment>
                     )}
                   </p>
+                  <span className="blog-link">
+                    {props.text26 ?? (
+                      <Fragment>
+                        <span className="home1-text63">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_vuJhYe'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
                 </div>
-              </div>
-            </section>
-            <section className="partners-section">
-              <div className="container">
-                <h2 className="section-title">
-                  {props.heading3 ?? (
-                    <Fragment>
-                      <span className="home1-text71">
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: translate.raw('text_98eSfg'),
-                          }}
-                        ></span>
-                      </span>
-                    </Fragment>
-                  )}
-                </h2>
-                <div className="partners-grid">
-                  <div className="partner-logo">
-                    <img alt={props.imageAlt} src={props.imageSrc} />
-                  </div>
-                  <div className="partner-logo">
-                    <img alt={props.imageAlt1} src={props.imageSrc1} />
-                  </div>
-                  <div className="partner-logo">
-                    <img alt={props.imageAlt2} src={props.imageSrc2} />
-                  </div>
-                  <div className="partner-logo">
-                    <img alt={props.imageAlt3} src={props.imageSrc3} />
-                  </div>
+              </article>
+              <article className="blog-card">
+                <div className="blog-image">
+                  <img src={props.imageSrc16} alt={props.imageAlt16} />
                 </div>
-              </div>
-            </section>
+                <div className="blog-content">
+                  <span className="blog-date">
+                    {props.text27 ?? (
+                      <Fragment>
+                        <span className="home1-text64">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_i1juHP'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                  <h3 className="blog-title">
+                    {props.heading19 ?? (
+                      <Fragment>
+                        <span className="home1-text65">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_m6qEAu'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </h3>
+                  <p className="blog-excerpt">
+                    {props.text28 ?? (
+                      <Fragment>
+                        <span className="home1-text66">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_w8bViP'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </p>
+                  <span className="blog-link">
+                    {props.text29 ?? (
+                      <Fragment>
+                        <span className="home1-text67">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_Y6Mjhy'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                </div>
+              </article>
+              <article className="blog-card">
+                <div className="blog-image">
+                  <img src={props.imageSrc17} alt={props.imageAlt17} />
+                </div>
+                <div className="blog-content">
+                  <span className="blog-date">
+                    {props.text30 ?? (
+                      <Fragment>
+                        <span className="home1-text68">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_SRqXzg'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                  <h3 className="blog-title">
+                    {props.heading20 ?? (
+                      <Fragment>
+                        <span className="home1-text69">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_b6fPs4'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </h3>
+                  <p className="blog-excerpt">
+                    {props.text31 ?? (
+                      <Fragment>
+                        <span className="home1-text70">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_UgePV4'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </p>
+                  <span className="blog-link">
+                    {props.text32 ?? (
+                      <Fragment>
+                        <span className="home1-text71">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_FBWSFO'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                </div>
+              </article>
+            </div>
+            <div className="blog-cta">
+              <span className="blog-btn blog-btn-primary">
+                {props.text20 ?? (
+                  <Fragment>
+                    <span className="home1-text55">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_pq-XF8'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                )}
+              </span>
+            </div>
           </div>
-        </div>
+        </section>
+        <section className="video-section">
+          <div className="video-container">
+            <h2 className="video-title">
+              {props.heading21 ?? (
+                <Fragment>
+                  <span className="home1-text72">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_-kQvdq'),
+                      }}
+                    ></span>
+                  </span>
+                </Fragment>
+              )}
+            </h2>
+            <div className="video-wrapper-outer">
+              <div className="video-wrapper-inner">
+                <iframe
+                  src="https://www.youtube.com/embed/VIDEO_ID"
+                  title="Food Control Research"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div className="video-text">
+              <h3>
+                {props.heading22 ?? (
+                  <Fragment>
+                    <span className="home1-text73">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_q0q3wN'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                )}
+              </h3>
+              <p>
+                {props.text33 ?? (
+                  <Fragment>
+                    <span className="home1-text74">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_wLhDm1'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                )}
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="partners-section">
+          <div className="partners-container">
+            <h2 className="partners-title">
+              {props.heading23 ?? (
+                <Fragment>
+                  <span className="home1-text75">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_xcVjFu'),
+                      }}
+                    ></span>
+                  </span>
+                </Fragment>
+              )}
+            </h2>
+            <div className="partners-grid">
+              <div className="partners-logo">
+                <img src={props.imageSrc18} alt={props.imageAlt18} />
+              </div>
+              <div className="partners-logo">
+                <img src={props.imageSrc19} alt={props.imageAlt19} />
+              </div>
+              <div className="partners-logo">
+                <img src={props.imageSrc20} alt={props.imageAlt20} />
+              </div>
+              <div className="partners-logo">
+                <img src={props.imageSrc21} alt={props.imageAlt21} />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <style jsx>
         {`
@@ -687,119 +683,119 @@ const Home1 = (props) => {
 }
 
 Home1.defaultProps = {
-  text7: undefined,
-  imageSrc3: 'assets/partners/creaveg-logo.png',
-  heading2: undefined,
-  heading8: undefined,
-  imageAlt8: 'Public Catering Legislation',
-  text3: undefined,
-  text: undefined,
-  imageAlt: 'InDeRe',
-  text11: undefined,
-  text2: undefined,
-  imageAlt7: 'Gluten Contamination',
-  imageAlt9: 'Nutrition Conference',
-  imageSrc: 'assets/partners/indere-logo.png',
-  imageAlt10: 'Food Waste Reduction',
-  imageSrc10: 'assets/blog/food-waste.jpg',
-  heading11: undefined,
-  imageSrc4: 'assets/icons/catering.svg',
-  text8: undefined,
-  heading5: undefined,
-  imageSrc6: 'assets/icons/sustainability.svg',
-  button3: undefined,
-  heading9: undefined,
-  imageSrc9: 'assets/blog/nutrition-conference.jpg',
-  imageSrc7: 'assets/blog/gluten-contamination.png',
-  text13: undefined,
-  text10: undefined,
-  imageAlt5: 'Science Icon',
-  text14: undefined,
-  heading: undefined,
-  text15: undefined,
-  imageSrc8: 'assets/blog/legislation-effectiveness.jpg',
-  imageSrc5: 'assets/icons/science.svg',
-  button2: undefined,
-  button1: undefined,
-  text16: undefined,
-  heading10: undefined,
-  text4: undefined,
-  imageAlt3: 'Creaveg',
-  imageAlt2: 'Soreca',
-  text9: undefined,
-  heading4: undefined,
-  imageSrc2: 'assets/partners/soreca-logo.png',
-  button: undefined,
-  heading6: undefined,
-  imageAlt4: 'Catering Icon',
-  text1: undefined,
-  heading1: undefined,
-  heading3: undefined,
-  text5: undefined,
-  heading7: undefined,
-  text12: undefined,
-  imageAlt6: 'Sustainability Icon',
-  imageAlt1: 'KapInFood',
-  imageSrc1: 'assets/partners/kapinfood-logo.png',
-  text6: undefined,
+  heading12: undefined,
+  heading13: undefined,
+  text17: undefined,
+  heading14: undefined,
+  text18: undefined,
+  heading15: undefined,
+  text19: undefined,
+  imageSrc11: 'assets/icons/catering.svg',
+  imageAlt11: 'Catering Icon',
+  imageSrc12: 'assets/icons/science.svg',
+  imageAlt12: 'Science Icon',
+  imageSrc13: 'assets/icons/sustainability.svg',
+  imageAlt13: 'Sustainability Icon',
+  heading16: undefined,
+  button4: undefined,
+  button5: undefined,
+  button6: undefined,
+  button7: undefined,
+  text20: undefined,
+  imageSrc14: 'assets/blog/gluten-contamination.png',
+  imageAlt14: 'Gluten Contamination',
+  text21: undefined,
+  heading17: undefined,
+  text22: undefined,
+  text23: undefined,
+  imageSrc15: 'assets/blog/legislation-effectiveness.jpg',
+  imageAlt15: 'Public Catering Legislation',
+  text24: undefined,
+  heading18: undefined,
+  text25: undefined,
+  text26: undefined,
+  imageSrc16: 'assets/blog/nutrition-conference.jpg',
+  imageAlt16: 'Nutrition Conference',
+  text27: undefined,
+  heading19: undefined,
+  text28: undefined,
+  text29: undefined,
+  imageSrc17: 'assets/blog/food-waste.jpg',
+  imageAlt17: 'Food Waste Reduction',
+  text30: undefined,
+  heading20: undefined,
+  text31: undefined,
+  text32: undefined,
+  heading21: undefined,
+  heading22: undefined,
+  text33: undefined,
+  heading23: undefined,
+  imageSrc18: 'assets/partners/indere-logo.png',
+  imageAlt18: 'InDeRe',
+  imageSrc19: 'assets/partners/kapinfood-logo.png',
+  imageAlt19: 'KapInFood',
+  imageSrc20: 'assets/partners/soreca-logo.png',
+  imageAlt20: 'Soreca',
+  imageSrc21: 'assets/partners/creaveg-logo.png',
+  imageAlt21: 'Creaveg',
 }
 
 Home1.propTypes = {
-  text7: PropTypes.element,
-  imageSrc3: PropTypes.string,
-  heading2: PropTypes.element,
-  heading8: PropTypes.element,
-  imageAlt8: PropTypes.string,
-  text3: PropTypes.element,
-  text: PropTypes.element,
-  imageAlt: PropTypes.string,
-  text11: PropTypes.element,
-  text2: PropTypes.element,
-  imageAlt7: PropTypes.string,
-  imageAlt9: PropTypes.string,
-  imageSrc: PropTypes.string,
-  imageAlt10: PropTypes.string,
-  imageSrc10: PropTypes.string,
-  heading11: PropTypes.element,
-  imageSrc4: PropTypes.string,
-  text8: PropTypes.element,
-  heading5: PropTypes.element,
-  imageSrc6: PropTypes.string,
-  button3: PropTypes.element,
-  heading9: PropTypes.element,
-  imageSrc9: PropTypes.string,
-  imageSrc7: PropTypes.string,
-  text13: PropTypes.element,
-  text10: PropTypes.element,
-  imageAlt5: PropTypes.string,
-  text14: PropTypes.element,
-  heading: PropTypes.element,
-  text15: PropTypes.element,
-  imageSrc8: PropTypes.string,
-  imageSrc5: PropTypes.string,
-  button2: PropTypes.element,
-  button1: PropTypes.element,
-  text16: PropTypes.element,
-  heading10: PropTypes.element,
-  text4: PropTypes.element,
-  imageAlt3: PropTypes.string,
-  imageAlt2: PropTypes.string,
-  text9: PropTypes.element,
-  heading4: PropTypes.element,
-  imageSrc2: PropTypes.string,
-  button: PropTypes.element,
-  heading6: PropTypes.element,
-  imageAlt4: PropTypes.string,
-  text1: PropTypes.element,
-  heading1: PropTypes.element,
-  heading3: PropTypes.element,
-  text5: PropTypes.element,
-  heading7: PropTypes.element,
-  text12: PropTypes.element,
-  imageAlt6: PropTypes.string,
-  imageAlt1: PropTypes.string,
-  imageSrc1: PropTypes.string,
-  text6: PropTypes.element,
+  heading12: PropTypes.element,
+  heading13: PropTypes.element,
+  text17: PropTypes.element,
+  heading14: PropTypes.element,
+  text18: PropTypes.element,
+  heading15: PropTypes.element,
+  text19: PropTypes.element,
+  imageSrc11: PropTypes.string,
+  imageAlt11: PropTypes.string,
+  imageSrc12: PropTypes.string,
+  imageAlt12: PropTypes.string,
+  imageSrc13: PropTypes.string,
+  imageAlt13: PropTypes.string,
+  heading16: PropTypes.element,
+  button4: PropTypes.element,
+  button5: PropTypes.element,
+  button6: PropTypes.element,
+  button7: PropTypes.element,
+  text20: PropTypes.element,
+  imageSrc14: PropTypes.string,
+  imageAlt14: PropTypes.string,
+  text21: PropTypes.element,
+  heading17: PropTypes.element,
+  text22: PropTypes.element,
+  text23: PropTypes.element,
+  imageSrc15: PropTypes.string,
+  imageAlt15: PropTypes.string,
+  text24: PropTypes.element,
+  heading18: PropTypes.element,
+  text25: PropTypes.element,
+  text26: PropTypes.element,
+  imageSrc16: PropTypes.string,
+  imageAlt16: PropTypes.string,
+  text27: PropTypes.element,
+  heading19: PropTypes.element,
+  text28: PropTypes.element,
+  text29: PropTypes.element,
+  imageSrc17: PropTypes.string,
+  imageAlt17: PropTypes.string,
+  text30: PropTypes.element,
+  heading20: PropTypes.element,
+  text31: PropTypes.element,
+  text32: PropTypes.element,
+  heading21: PropTypes.element,
+  heading22: PropTypes.element,
+  text33: PropTypes.element,
+  heading23: PropTypes.element,
+  imageSrc18: PropTypes.string,
+  imageAlt18: PropTypes.string,
+  imageSrc19: PropTypes.string,
+  imageAlt19: PropTypes.string,
+  imageSrc20: PropTypes.string,
+  imageAlt20: PropTypes.string,
+  imageSrc21: PropTypes.string,
+  imageAlt21: PropTypes.string,
 }
 
 export default Home1

@@ -487,7 +487,7 @@ const HomeBackup = (props) => {
           </div>
           <div className="home-backup-content12">
             <div className="home-backup-grid2">
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper1">
                     <Practice
@@ -517,7 +517,7 @@ const HomeBackup = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper2">
                     <Practice
@@ -548,7 +548,7 @@ const HomeBackup = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper3">
                     <Practice
@@ -579,7 +579,7 @@ const HomeBackup = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper4">
                     <Practice
@@ -610,7 +610,7 @@ const HomeBackup = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper5">
                     <Practice
@@ -641,7 +641,7 @@ const HomeBackup = (props) => {
                   </div>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/home">
                 <a>
                   <div className="home-backup-practice-wrapper6">
                     <Practice
