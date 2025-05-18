@@ -78,8 +78,13 @@ export default Video11
 
 export async function getStaticProps(context) {
   try {
+    const messages = (await import('/locales/' + context.locale + '.json'))
+      .default
     const response = await getEntitiesWithPagination({
       ...context?.params,
+      ...(context?.locale && {
+        locale: context.locale,
+      }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
         'query MyQuery($first: Int, $after: String, $locale: String){allVideo(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}vimeoVideoId}}}}',
@@ -94,6 +99,7 @@ export async function getStaticProps(context) {
     }
     return {
       props: {
+        messages,
         videoEntities: response,
         ...response?.meta,
       },

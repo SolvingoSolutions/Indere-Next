@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import { useGlobalContext } from '@/global-context'
 
 const Header = (props) => {
+  const translate = useTranslations()
   const { locale, locales } = useGlobalContext()
   return (
     <>
@@ -23,40 +24,78 @@ const Header = (props) => {
             <div data-thq="thq-navbar-btn-group" className="header-right">
               <nav className="header-links">
                 <Link href="/">
-                  <a className="header-link2">Home</a>
+                  <a className="header-link2">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Link_yc9l2k'),
+                      }}
+                    ></span>
+                  </a>
                 </Link>
-                <span className="header-link3">
-                  {props.link5 ?? (
-                    <Fragment>
-                      <span className="header-text21">About US</span>
-                    </Fragment>
-                  )}
-                </span>
-                <span className="header-link4">
+                <Link href="/home-src">
+                  <a className="header-link4">
+                    {props.link5 ?? (
+                      <Fragment>
+                        <span className="header-text21">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_XKSv8C'),
+                            }}
+                          ></span>
+                        </span>
+                      </Fragment>
+                    )}
+                  </a>
+                </Link>
+                <span className="header-link5">
                   {props.link4 ?? (
                     <Fragment>
-                      <span className="header-text20">Services</span>
-                    </Fragment>
-                  )}
-                </span>
-                <span className="header-link5">
-                  {props.link1 ?? (
-                    <Fragment>
-                      <span className="header-text24">Scientific projects</span>
+                      <span className="header-text20">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_Yx-Q4z'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-link6">
-                  {props.link2 ?? (
+                  {props.link1 ?? (
                     <Fragment>
-                      <span className="header-text18">Kapinfood</span>
+                      <span className="header-text24">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_oFPqiK'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-link7">
+                  {props.link2 ?? (
+                    <Fragment>
+                      <span className="header-text18">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_6Dgtdi'),
+                          }}
+                        ></span>
+                      </span>
+                    </Fragment>
+                  )}
+                </span>
+                <span className="header-link8">
                   {props.link3 ?? (
                     <Fragment>
-                      <span className="header-text15">News</span>
+                      <span className="header-text15">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_ZbO4ZF'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
@@ -131,28 +170,52 @@ const Header = (props) => {
                 <span className="header-text10">
                   {props.text2 ?? (
                     <Fragment>
-                      <span className="header-text19">Features</span>
+                      <span className="header-text19">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_ztyu10'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-text11">
                   {props.text3 ?? (
                     <Fragment>
-                      <span className="header-text16">How it works</span>
+                      <span className="header-text16">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_It6yL4'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-text12">
                   {props.text4 ?? (
                     <Fragment>
-                      <span className="header-text23">Prices</span>
+                      <span className="header-text23">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_Yi1O6j'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
                 <span className="header-text13">
                   {props.text5 ?? (
                     <Fragment>
-                      <span className="header-text22">Contact</span>
+                      <span className="header-text22">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_xHbHJl'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </span>
@@ -166,7 +229,11 @@ const Header = (props) => {
                     {props.text6 ?? (
                       <Fragment>
                         <span className="header-text17">
-                          Book an appointment
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_azIbCS'),
+                            }}
+                          ></span>
                         </span>
                       </Fragment>
                     )}
@@ -239,22 +306,13 @@ const Header = (props) => {
           .header-link2:hover {
             opacity: 0.5;
           }
-          .header-link3 {
-            cursor: pointer;
-            font-style: normal;
-            transition: 0.3s;
-            font-weight: 500;
-            line-height: 24px;
-          }
-          .header-link3:hover {
-            opacity: 0.5;
-          }
           .header-link4 {
             cursor: pointer;
             font-style: normal;
             transition: 0.3s;
             font-weight: 500;
             line-height: 24px;
+            text-decoration: none;
           }
           .header-link4:hover {
             opacity: 0.5;
@@ -287,6 +345,16 @@ const Header = (props) => {
             line-height: 24px;
           }
           .header-link7:hover {
+            opacity: 0.5;
+          }
+          .header-link8 {
+            cursor: pointer;
+            font-style: normal;
+            transition: 0.3s;
+            font-weight: 500;
+            line-height: 24px;
+          }
+          .header-link8:hover {
             opacity: 0.5;
           }
           .header-language-switcher {

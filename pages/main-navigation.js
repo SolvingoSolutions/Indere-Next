@@ -63,3 +63,14 @@ const MainNavigation1 = (props) => {
 }
 
 export default MainNavigation1
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

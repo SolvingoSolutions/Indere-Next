@@ -76,8 +76,13 @@ export default UniversalText
 
 export async function getStaticProps(context) {
   try {
+    const messages = (await import('/locales/' + context.locale + '.json'))
+      .default
     const response = await getSingleEntityType({
       ...context?.params,
+      ...(context?.locale && {
+        locale: context.locale,
+      }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
         'query MyQuery($locale:String){UniversalText(locale:$locale){_meta{createdAt updatedAt id}title copyright customHtml filter_all primaryColor customHtmlBody filter_current secondaryColor filter_divested pageNotFoundDescription{json connections{__typename  }}pageNotFoundBackgroundImage{__typename _meta{createdAt updatedAt id}description height id src title width}}}',
@@ -92,6 +97,7 @@ export async function getStaticProps(context) {
     }
     return {
       props: {
+        messages,
         universalTextEntities: response,
         ...response?.meta,
       },

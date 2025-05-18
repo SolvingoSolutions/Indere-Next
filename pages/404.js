@@ -64,3 +64,14 @@ const NotFound = (props) => {
 }
 
 export default NotFound
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

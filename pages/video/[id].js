@@ -64,8 +64,13 @@ export default Video
 
 export async function getStaticProps(context) {
   try {
+    const messages = (await import('/locales/' + context.locale + '.json'))
+      .default
     const response = await getEntityByAttribute({
       ...context?.params,
+      ...(context?.locale && {
+        locale: context.locale,
+      }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
         'query Video($value:ID!,$locale:String){Video(id:$value,locale:$locale){_meta{createdAt updatedAt id}vimeoVideoId}}',
@@ -79,6 +84,7 @@ export async function getStaticProps(context) {
     }
     return {
       props: {
+        messages,
         videoEntity: response?.data?.[0],
         ...response?.meta,
       },

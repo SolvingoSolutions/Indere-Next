@@ -1,18 +1,49 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Practice = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="practice-practice">
         <div className="practice-heading">
-          <h3 className="practice-header">{props.title}</h3>
-          <p className="practice-caption">{props.description}</p>
+          <h3 className="practice-header">
+            {props.title1 ?? (
+              <Fragment>
+                <span className="practice-text2">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_CpTJ8q'),
+                    }}
+                  ></span>
+                </span>
+              </Fragment>
+            )}
+          </h3>
+          <p className="practice-caption">
+            {props.description1 ?? (
+              <Fragment>
+                <span className="practice-text3">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_q5VKuL'),
+                    }}
+                  ></span>
+                </span>
+              </Fragment>
+            )}
+          </p>
         </div>
         <div className="read-more">
-          <span className="practice-text">Read more</span>
+          <span className="practice-text1">
+            <span
+              dangerouslySetInnerHTML={{
+                __html: translate.raw('text_qk0Co2'),
+              }}
+            ></span>
+          </span>
           <img
             alt="image"
             src="/Icons/arrow-2.svg"
@@ -48,7 +79,7 @@ const Practice = (props) => {
             max-width: 385px;
             line-height: 24px;
           }
-          .practice-text {
+          .practice-text1 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
@@ -56,6 +87,12 @@ const Practice = (props) => {
           .practice-image {
             width: 12px;
             object-fit: cover;
+          }
+          .practice-text2 {
+            display: inline-block;
+          }
+          .practice-text3 {
+            display: inline-block;
           }
           @media (max-width: 767px) {
             .practice-practice {
@@ -77,14 +114,13 @@ const Practice = (props) => {
 }
 
 Practice.defaultProps = {
-  title: 'Cardiology',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+  title1: undefined,
+  description1: undefined,
 }
 
 Practice.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
+  title1: PropTypes.element,
+  description1: PropTypes.element,
 }
 
 export default Practice

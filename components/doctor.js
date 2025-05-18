@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Doctor = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="doctor-doctor">
@@ -13,8 +14,32 @@ const Doctor = (props) => {
           className="doctor-image"
         />
         <div className="doctor-heading">
-          <h2 className="doctor-text1">{props.heading}</h2>
-          <p className="doctor-text2">{props.text}</p>
+          <h2 className="doctor-text1">
+            {props.heading1 ?? (
+              <Fragment>
+                <span className="doctor-text4">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_qv0xhT'),
+                    }}
+                  ></span>
+                </span>
+              </Fragment>
+            )}
+          </h2>
+          <p className="doctor-text2">
+            {props.text1 ?? (
+              <Fragment>
+                <span className="doctor-text3">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_13DUSA'),
+                    }}
+                  ></span>
+                </span>
+              </Fragment>
+            )}
+          </p>
         </div>
       </div>
       <style jsx>
@@ -53,6 +78,12 @@ const Doctor = (props) => {
             text-align: center;
             line-height: 21px;
           }
+          .doctor-text3 {
+            display: inline-block;
+          }
+          .doctor-text4 {
+            display: inline-block;
+          }
           @media (max-width: 767px) {
             .doctor-image {
               width: 200px;
@@ -75,17 +106,17 @@ const Doctor = (props) => {
 }
 
 Doctor.defaultProps = {
-  heading: 'Dr. Audrey Smith',
+  text1: undefined,
+  heading1: undefined,
   imageSrc: '/Doctors/doctor-1-300w.png',
   imageAlt: 'image',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
 }
 
 Doctor.propTypes = {
-  heading: PropTypes.string,
+  text1: PropTypes.element,
+  heading1: PropTypes.element,
   imageSrc: PropTypes.string,
   imageAlt: PropTypes.string,
-  text: PropTypes.string,
 }
 
 export default Doctor

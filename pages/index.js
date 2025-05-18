@@ -8,6 +8,7 @@ import Articles from '../components/articles'
 import Footer from '../components/footer'
 
 const Home = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="home-container">
@@ -18,7 +19,13 @@ const Home = (props) => {
         <div data-modal="practices" className="home-modal">
           <div className="home-practices">
             <div className="home-heading1">
-              <span className="home-header1">Our practices</span>
+              <span className="home-header1">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Header_t533aS'),
+                  }}
+                ></span>
+              </span>
               <svg
                 viewBox="0 0 1024 1024"
                 data-close="practices"
@@ -30,14 +37,29 @@ const Home = (props) => {
             <div className="home-grid">
               <div className="home-section1">
                 <div className="home-heading2">
-                  <span className="home-header2">Cardiology</span>
+                  <span className="home-header2">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_DTwxXd'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_aLiA99'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text10">Read more</span>
+                  <span className="home-text10">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_3HzFDq'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -47,14 +69,29 @@ const Home = (props) => {
               </div>
               <div className="home-section2">
                 <div className="home-heading3">
-                  <span className="home-header3">Orthopedics</span>
+                  <span className="home-header3">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_DTcPHT'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_pyyj8S'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text11">Read more</span>
+                  <span className="home-text11">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_5J5zFn'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -64,14 +101,29 @@ const Home = (props) => {
               </div>
               <div className="home-section3">
                 <div className="home-heading4">
-                  <span className="home-header4">Ophtalmology</span>
+                  <span className="home-header4">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_SoI402'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_V4pObq'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text12">Read more</span>
+                  <span className="home-text12">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_i2QZoa'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -81,14 +133,29 @@ const Home = (props) => {
               </div>
               <div className="home-section4">
                 <div className="home-heading5">
-                  <span className="home-header5">Pediatrics</span>
+                  <span className="home-header5">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_H9AX2H'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_TW25lR'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text13">Read more</span>
+                  <span className="home-text13">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_D4Ryy1'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -98,14 +165,29 @@ const Home = (props) => {
               </div>
               <div className="home-section5">
                 <div className="home-heading6">
-                  <span className="home-header6">Nutrition</span>
+                  <span className="home-header6">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_4lGPQU'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_PHBvyn'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text14">Read more</span>
+                  <span className="home-text14">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_905w-_'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -115,14 +197,29 @@ const Home = (props) => {
               </div>
               <div className="home-section6">
                 <div className="home-heading7">
-                  <span className="home-header7">General</span>
+                  <span className="home-header7">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_0zTeoq'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-caption6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_ai7WRC'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-text15">Read more</span>
+                  <span className="home-text15">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_10ksGZ'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -136,338 +233,457 @@ const Home = (props) => {
         <Header
           link1={
             <Fragment>
-              <span className="home-text16">Scientific projects</span>
+              <span className="home-text16">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_P4Q6i4'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link2={
             <Fragment>
-              <span className="home-text17">Kapinfood</span>
+              <span className="home-text17">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_C1BjPx'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link3={
             <Fragment>
-              <span className="home-text18">News</span>
+              <span className="home-text18">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_5dc0ac'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link4={
             <Fragment>
-              <span className="home-text19">Services</span>
+              <span className="home-text19">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_N6nLV5'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link5={
             <Fragment>
-              <span className="home-text20">About US</span>
+              <span className="home-text20">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_VpVeFk'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text2={
             <Fragment>
-              <span className="home-text21">Features</span>
+              <span className="home-text21">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_JbR-Ks'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text3={
             <Fragment>
-              <span className="home-text22">How it works</span>
+              <span className="home-text22">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_xsXECc'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text4={
             <Fragment>
-              <span className="home-text23">Prices</span>
+              <span className="home-text23">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_Ynr0TN'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text5={
             <Fragment>
-              <span className="home-text24">Contact</span>
+              <span className="home-text24">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_MK3jjB'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text6={
             <Fragment>
-              <span className="home-text25">Book an appointment</span>
+              <span className="home-text25">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_pm_yC3'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
         ></Header>
         <Articles
-          heading={
-            <Fragment>
-              <span className="home-text26">
-                No articles match your search criteria
-              </span>
-            </Fragment>
-          }
           text={
             <Fragment>
-              <span className="home-text27">
-                Try adjusting your search terms or selecting a different
-                category
-              </span>
-            </Fragment>
-          }
-          button={
-            <Fragment>
-              <span className="home-text28">All</span>
-            </Fragment>
-          }
-          button1={
-            <Fragment>
-              <span className="home-text29">Catering</span>
-            </Fragment>
-          }
-          button2={
-            <Fragment>
-              <span className="home-text30">
-                {' '}
-                Innovations
+              <span className="home-text26">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_4Dmd7n'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          button3={
-            <Fragment>
-              <span className="home-text31">Laboratory</span>
-            </Fragment>
-          }
-          button4={
-            <Fragment>
-              <span className="home-text32">
-                {' '}
-                Management system/Innovation
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </Fragment>
-          }
-          button5={
-            <Fragment>
-              <span className="home-text33">Research</span>
-            </Fragment>
-          }
-          heading1={
-            <Fragment>
-              <span className="home-text34">
-                Gluten Contamination in School Kitchens
+                ></span>
               </span>
             </Fragment>
           }
           text1={
             <Fragment>
-              <span className="home-text35">
-                {' '}
-                In Hungary, school caterers are obliged to provide gluten-free
-                meal for students having a medical referral. However,
-                implementing gluten-free catering is not a simple task. In [...]
+              <span className="home-text27">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_c0qcUs'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          heading2={
-            <Fragment>
-              <span className="home-text36">
-                {' '}
-                Measuring the effectiveness of legislation regulating public
-                catering
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                ></span>
               </span>
             </Fragment>
           }
           text2={
             <Fragment>
-              <span className="home-text37">
-                {' '}
-                School catering models have a decisive role in preserving
-                children&apos;s health and establishing adequatenutritional
-                status. Children spend a significant part of their time at
-                school, so [...]
+              <span className="home-text28">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_EPvznw'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          heading3={
-            <Fragment>
-              <span className="home-text38">
-                {' '}
-                Hungarian Society of Nutrition PhD conference 2023
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                ></span>
               </span>
             </Fragment>
           }
           text3={
             <Fragment>
-              <span className="home-text39">
-                {' '}
-                Assessment of the conditions for gluten-free catering in
-                childcare Gluten sensitivity is a digestive disease, affecting
-                currently 1% of the world population. The only accepted therapy
-                [...]
+              <span className="home-text29">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_dBMy8-'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          heading4={
-            <Fragment>
-              <span className="home-text40">
-                {' '}
-                Food waste reduction in the catering sector
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                ></span>
               </span>
             </Fragment>
           }
           text4={
             <Fragment>
-              <span className="home-text41">
-                {' '}
-                At the InDeRe Institute for Food System Research and Innovation,
-                we work in consortium partnership with the University of
-                Veterinary Medicine Budapest, the Hungarian Food Bank [...]
+              <span className="home-text30">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_3ZsG1Q'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          heading5={
-            <Fragment>
-              <span className="home-text42">
-                &quot;OTKA&quot; Postdoctoral ExcellenceProgramme
+                ></span>
               </span>
             </Fragment>
           }
           text5={
             <Fragment>
-              <span className="home-text43">
-                {' '}
-                András József Tóth, PhD. has been awarded a Postdoctoral
-                Excellence Programme as a Principal Investigator, researching
-                Sustainable Child Nutrition. The host institution is the InDeRe
-                Institute [...]
+              <span className="home-text31">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_yTUB5K'),
                   }}
-                />
-              </span>
-            </Fragment>
-          }
-          heading6={
-            <Fragment>
-              <span className="home-text44">
-                {' '}
-                New publication in the journal &quot;Food Quality
-                andPreference&quot;!
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                ></span>
               </span>
             </Fragment>
           }
           text6={
             <Fragment>
-              <span className="home-text45">
-                {' '}
-                &quot;Food liking and consumption in schools: Comparison of
-                questionnaire-based surveys with real consumption&quot; is the
-                title of our new scientific publication in &quot;Food Quality
-                and Preference&quot;. [...]
+              <span className="home-text32">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_YJuRp2'),
                   }}
-                />
+                ></span>
               </span>
             </Fragment>
           }
           text7={
             <Fragment>
-              <span className="home-text46">2024.02.05.</span>
+              <span className="home-text33">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_Iwis_u'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text8={
             <Fragment>
-              <span className="home-text47">2023.05.23.</span>
+              <span className="home-text34">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_4aBndW'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text9={
             <Fragment>
-              <span className="home-text48">2023.05.10.</span>
+              <span className="home-text35">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_TacVV_'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button={
+            <Fragment>
+              <span className="home-text36">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ztkkZt'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text10={
             <Fragment>
-              <span className="home-text49">2023.01.16.</span>
+              <span className="home-text37">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_7ZyN_s'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text11={
             <Fragment>
-              <span className="home-text50">2022.10.01.</span>
+              <span className="home-text38">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_EFbFgs'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           text12={
             <Fragment>
-              <span className="home-text51">2022.07.17.</span>
+              <span className="home-text39">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_2u0fVt'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button1={
+            <Fragment>
+              <span className="home-text40">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_tVCF-G'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button2={
+            <Fragment>
+              <span className="home-text41">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_8XWWjs'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button3={
+            <Fragment>
+              <span className="home-text42">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ywLpQZ'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button4={
+            <Fragment>
+              <span className="home-text43">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_obn5aS'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          button5={
+            <Fragment>
+              <span className="home-text44">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_sS82Pn'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading={
+            <Fragment>
+              <span className="home-text45">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_4pw76T'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading1={
+            <Fragment>
+              <span className="home-text46">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_CJr571'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading2={
+            <Fragment>
+              <span className="home-text47">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ZZAYzK'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading3={
+            <Fragment>
+              <span className="home-text48">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_Q8b30R'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading4={
+            <Fragment>
+              <span className="home-text49">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ffMMX0'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading5={
+            <Fragment>
+              <span className="home-text50">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_C02SMb'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading6={
+            <Fragment>
+              <span className="home-text51">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_PnP8vI'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
         ></Articles>
         <Footer
           header2={
             <Fragment>
-              <span className="home-text52">Contact</span>
+              <span className="home-text52">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_LwTLpz'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link102={
             <Fragment>
               <span className="home-text53">
-                Office: 1118 Budapest, Budaörsi út 15. I.em. 11.
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_9RkW1l'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
           link112={
             <Fragment>
-              <span className="home-text54">Tel: 00-36-70-338-2408</span>
+              <span className="home-text54">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_UOqxqu'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           header21={
             <Fragment>
               <span className="home-text55">
-                © 2020 Foodcontrol. Adatkezelési tájékoztató Powered by Bettery
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_nTN0vK'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
           link1121={
             <Fragment>
-              <span className="home-text56">food@foodcontrol.hu</span>
+              <span className="home-text56">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_p7kZ5R'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
         ></Footer>
@@ -872,3 +1088,14 @@ const Home = (props) => {
 }
 
 export default Home
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

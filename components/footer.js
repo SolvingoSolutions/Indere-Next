@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Footer = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="footer-footer">
@@ -16,7 +17,13 @@ const Footer = (props) => {
             />
           </div>
           <div className="footer-socials">
-            <span className="footer-socials-title">FOLLOW US ON</span>
+            <span className="footer-socials-title">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('SocialsTitle_8dLtn-'),
+                }}
+              ></span>
+            </span>
             <div className="footer-icons">
               <div className="social">
                 <img
@@ -38,12 +45,24 @@ const Footer = (props) => {
             <span className="footer-header1">
               {props.header2 ?? (
                 <Fragment>
-                  <span className="footer-text5">Contact</span>
+                  <span className="footer-text5">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_1mUxNw'),
+                      }}
+                    ></span>
+                  </span>
                 </Fragment>
               )}
             </span>
             <div className="footer-links">
-              <span className="footer-link1">FOOD CONTROL GROUP</span>
+              <span className="footer-link1">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Link_jIAqhN'),
+                  }}
+                ></span>
+              </span>
               <a
                 href="mailto:contact@template.new?subject=Main"
                 className="footer-link2"
@@ -51,7 +70,11 @@ const Footer = (props) => {
                 {props.link102 ?? (
                   <Fragment>
                     <span className="footer-text2">
-                      Office: 1118 Budapest, Budaörsi út 15. I.em. 11.
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_-rJpxY'),
+                        }}
+                      ></span>
                     </span>
                   </Fragment>
                 )}
@@ -59,14 +82,26 @@ const Footer = (props) => {
               <a href="tel:(004) 234 - 5678" className="footer-link3">
                 {props.link112 ?? (
                   <Fragment>
-                    <span className="footer-text3">Tel: 00-36-70-338-2408</span>
+                    <span className="footer-text3">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_eO23w4'),
+                        }}
+                      ></span>
+                    </span>
                   </Fragment>
                 )}
               </a>
               <a href="tel:(004) 234 - 5678" className="footer-link4">
                 {props.link1121 ?? (
                   <Fragment>
-                    <span className="footer-text4">food@foodcontrol.hu</span>
+                    <span className="footer-text4">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_P8k-KQ'),
+                        }}
+                      ></span>
+                    </span>
                   </Fragment>
                 )}
               </a>
@@ -78,8 +113,11 @@ const Footer = (props) => {
             {props.header21 ?? (
               <Fragment>
                 <span className="footer-text1">
-                  © 2020 Foodcontrol. Adatkezelési tájékoztató Powered by
-                  Bettery
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_59L-9Q'),
+                    }}
+                  ></span>
                 </span>
               </Fragment>
             )}

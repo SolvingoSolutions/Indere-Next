@@ -12,6 +12,7 @@ import Doctor from '../components/doctor'
 import Footer from '../components/footer'
 
 const HomeBackup = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="home-backup-container1">
@@ -22,7 +23,13 @@ const HomeBackup = (props) => {
         <div data-modal="practices" className="home-backup-modal1">
           <div className="home-backup-practices1">
             <div className="home-backup-heading10">
-              <span className="home-backup-header10">Our practices</span>
+              <span className="home-backup-header10">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Header_RFrjX9'),
+                  }}
+                ></span>
+              </span>
               <svg
                 viewBox="0 0 1024 1024"
                 data-close="practices"
@@ -34,14 +41,29 @@ const HomeBackup = (props) => {
             <div className="home-backup-grid1">
               <div className="home-backup-section1">
                 <div className="home-backup-heading11">
-                  <span className="home-backup-header11">Cardiology</span>
+                  <span className="home-backup-header11">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_kgAcs7'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_DniZrR'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text100">Read more</span>
+                  <span className="home-backup-text100">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_2mjaGQ'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -51,14 +73,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-section2">
                 <div className="home-backup-heading12">
-                  <span className="home-backup-header12">Orthopedics</span>
+                  <span className="home-backup-header12">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_VXTBij'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_uIqXkj'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text101">Read more</span>
+                  <span className="home-backup-text101">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_C_6VlR'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -68,14 +105,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-section3">
                 <div className="home-backup-heading13">
-                  <span className="home-backup-header13">Ophtalmology</span>
+                  <span className="home-backup-header13">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_7FeiTc'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_kTdKs2'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text102">Read more</span>
+                  <span className="home-backup-text102">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_MKdpyS'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -85,14 +137,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-section4">
                 <div className="home-backup-heading14">
-                  <span className="home-backup-header14">Pediatrics</span>
+                  <span className="home-backup-header14">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_eubQj-'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_ka2Nu8'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text103">Read more</span>
+                  <span className="home-backup-text103">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_kSfNNL'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -102,14 +169,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-section5">
                 <div className="home-backup-heading15">
-                  <span className="home-backup-header15">Nutrition</span>
+                  <span className="home-backup-header15">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_umO_7s'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_j_b4P7'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text104">Read more</span>
+                  <span className="home-backup-text104">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_oanEzm'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -119,14 +201,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-section6">
                 <div className="home-backup-heading16">
-                  <span className="home-backup-header16">General</span>
+                  <span className="home-backup-header16">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Header_Afh1wt'),
+                      }}
+                    ></span>
+                  </span>
                   <span className="home-backup-caption6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Caption_LHPq3j'),
+                      }}
+                    ></span>
                   </span>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text105">Read more</span>
+                  <span className="home-backup-text105">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_kNNWy7'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -141,52 +238,112 @@ const HomeBackup = (props) => {
           <Header
             link1={
               <Fragment>
-                <span className="home-backup-text106">Scientific projects</span>
+                <span className="home-backup-text106">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_gDBOmg'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             link2={
               <Fragment>
-                <span className="home-backup-text107">Kapinfood</span>
+                <span className="home-backup-text107">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_g1jn7O'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             link3={
               <Fragment>
-                <span className="home-backup-text108">News</span>
+                <span className="home-backup-text108">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_3mEn7S'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             link4={
               <Fragment>
-                <span className="home-backup-text109">Services</span>
+                <span className="home-backup-text109">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_fJL2jz'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             link5={
               <Fragment>
-                <span className="home-backup-text110">About US</span>
+                <span className="home-backup-text110">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_Sw8913'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             text2={
               <Fragment>
-                <span className="home-backup-text111">Features</span>
+                <span className="home-backup-text111">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_nf2A5r'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             text3={
               <Fragment>
-                <span className="home-backup-text112">How it works</span>
+                <span className="home-backup-text112">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_BMgGpL'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             text4={
               <Fragment>
-                <span className="home-backup-text113">Prices</span>
+                <span className="home-backup-text113">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_yd58VJ'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             text5={
               <Fragment>
-                <span className="home-backup-text114">Contact</span>
+                <span className="home-backup-text114">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_fGVT66'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
             text6={
               <Fragment>
-                <span className="home-backup-text115">Book an appointment</span>
+                <span className="home-backup-text115">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_LoGopK'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             }
           ></Header>
@@ -194,12 +351,18 @@ const HomeBackup = (props) => {
             <div className="home-backup-content10">
               <div className="home-backup-heading17">
                 <h1 className="home-backup-header17">
-                  Experienced general practitioners who have an eye for your
-                  care. Solvingo
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Header_x6SmVu'),
+                    }}
+                  ></span>
                 </h1>
                 <p className="home-backup-caption7">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Caption_aNSPQM'),
+                    }}
+                  ></span>
                 </p>
               </div>
               <button className="button button-main home-backup-book1">
@@ -208,7 +371,13 @@ const HomeBackup = (props) => {
                   src="/Icons/calendar.svg"
                   className="home-backup-image16"
                 />
-                <span>Book an appointment</span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_Fl4LGT'),
+                    }}
+                  ></span>
+                </span>
               </button>
             </div>
             <div className="home-backup-image17">
@@ -221,19 +390,99 @@ const HomeBackup = (props) => {
           </div>
           <div id="features" className="home-backup-features1">
             <div className="home-backup-content11">
-              <Features></Features>
-              <Features title="Virtual Clinic"></Features>
-              <Features title="Clinical results"></Features>
+              <Features
+                title1={
+                  <Fragment>
+                    <span className="home-backup-text117">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_Gb8ERJ'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                description1={
+                  <Fragment>
+                    <span className="home-backup-text118">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_3V-43f'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+              ></Features>
+              <Features
+                title="Virtual Clinic"
+                title1={
+                  <Fragment>
+                    <span className="home-backup-text119">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_Oe3BY5'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                description1={
+                  <Fragment>
+                    <span className="home-backup-text120">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_Im5GAK'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+              ></Features>
+              <Features
+                title="Clinical results"
+                title1={
+                  <Fragment>
+                    <span className="home-backup-text121">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_YiahbB'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                description1={
+                  <Fragment>
+                    <span className="home-backup-text122">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_r3G1YF'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+              ></Features>
             </div>
           </div>
           <div className="home-backup-background"></div>
         </section>
         <section className="home-backup-practices2">
           <div className="home-backup-heading18">
-            <h2 className="home-backup-text117">Our practices</h2>
-            <p className="home-backup-text118">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            <h2 className="home-backup-text123">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_20PAWE'),
+                }}
+              ></span>
+            </h2>
+            <p className="home-backup-text124">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_1eSh8H'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-content12">
@@ -241,57 +490,215 @@ const HomeBackup = (props) => {
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper1">
-                    <Practice></Practice>
+                    <Practice
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text125">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_1RDoZN'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text126">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_jNZ_dv'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper2">
-                    <Practice title="Orthopedics"></Practice>
+                    <Practice
+                      title="Orthopedics"
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text127">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_05QGi9'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text128">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_PI3Et4'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper3">
-                    <Practice title="Ophtalmology"></Practice>
+                    <Practice
+                      title="Ophtalmology"
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text129">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_ffvOL9'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text130">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_a3yYXm'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper4">
-                    <Practice title="Pediatrics"></Practice>
+                    <Practice
+                      title="Pediatrics"
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text131">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_0-ETpM'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text132">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_Hw0EdZ'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper5">
-                    <Practice title="Nutrition"></Practice>
+                    <Practice
+                      title="Nutrition"
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text133">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_b2YfSa'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text134">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_IXeTaw'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
               <Link href="/">
                 <a>
                   <div className="home-backup-practice-wrapper6">
-                    <Practice title="General"></Practice>
+                    <Practice
+                      title="General"
+                      title1={
+                        <Fragment>
+                          <span className="home-backup-text135">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_mqrh4b'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                      description1={
+                        <Fragment>
+                          <span className="home-backup-text136">
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: translate.raw('text_VmI-YF'),
+                              }}
+                            ></span>
+                          </span>
+                        </Fragment>
+                      }
+                    ></Practice>
                   </div>
                 </a>
               </Link>
             </div>
             <button data-open="practices" className="button button-main">
-              <span>All practices</span>
+              <span>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_PzIDlg'),
+                  }}
+                ></span>
+              </span>
             </button>
           </div>
         </section>
         <section id="how-it-works" className="home-backup-why">
           <div className="home-backup-heading19">
-            <h2 className="home-backup-header18">Why choose us</h2>
+            <h2 className="home-backup-header18">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('Header__hDu6P'),
+                }}
+              ></span>
+            </h2>
             <p className="home-backup-header19">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('Header_Cwe-7T'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-content13">
@@ -311,16 +718,18 @@ const HomeBackup = (props) => {
             </div>
             <div className="home-backup-caption8">
               <h3 className="home-backup-header20">
-                Consectetur adipiscing elit, sed do eiusmod tempor
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('Header_KpKJ4Z'),
                   }}
-                />
+                ></span>
               </h3>
               <p className="home-backup-header21">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Header__DV6KC'),
+                  }}
+                ></span>
               </p>
             </div>
           </div>
@@ -330,15 +739,28 @@ const HomeBackup = (props) => {
             <div className="home-backup-content14">
               <div className="home-backup-header22">
                 <h2 className="home-backup-heading20">
-                  Dedicated doctors with the core mission to help.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Heading_0CKQN3'),
+                    }}
+                  ></span>
                 </h2>
                 <p className="home-backup-capton1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Capton_QMCYkt'),
+                    }}
+                  ></span>
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-backup-text120">See our doctors</span>
+                <span className="home-backup-text138">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_wy4VLg'),
+                    }}
+                  ></span>
+                </span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -356,15 +778,28 @@ const HomeBackup = (props) => {
             <div className="home-backup-content15">
               <div className="home-backup-header23">
                 <h2 className="home-backup-heading21">
-                  Get access to specialty tests and breakthrough information.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Heading_RFZeQ3'),
+                    }}
+                  ></span>
                 </h2>
                 <p className="home-backup-capton2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Capton_ppw1c-'),
+                    }}
+                  ></span>
                 </p>
               </div>
               <div className="read-more">
-                <span className="home-backup-text121">Find test</span>
+                <span className="home-backup-text139">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_lpw8pC'),
+                    }}
+                  ></span>
+                </span>
                 <img
                   alt="image"
                   src="/Icons/arrow-2.svg"
@@ -382,15 +817,28 @@ const HomeBackup = (props) => {
             <div className="home-backup-content16">
               <div className="home-backup-header24">
                 <h2 className="home-backup-heading22">
-                  Find out how we can help you help you.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Heading_l5xiNb'),
+                    }}
+                  ></span>
                 </h2>
                 <p className="home-backup-capton3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Capton_E03r_H'),
+                    }}
+                  ></span>
                 </p>
               </div>
               <button className="button button-main home-backup-book2">
-                <span>Book a virtual appointment</span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_x6HEJ5'),
+                    }}
+                  ></span>
+                </span>
               </button>
             </div>
             <img
@@ -400,19 +848,31 @@ const HomeBackup = (props) => {
             />
           </div>
           <button className="home-backup-book3 button button-main">
-            <span>Book a virtual appointment</span>
+            <span>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_1L_iP1'),
+                }}
+              ></span>
+            </span>
           </button>
         </section>
         <section id="schedule" className="home-backup-schedule">
           <div className="home-backup-content17">
             <div className="home-backup-header25">
               <h2 className="home-backup-heading23">
-                Schedule an in person or virtual appointment today
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Heading_hrJMk-'),
+                  }}
+                ></span>
               </h2>
               <p className="home-backup-caption9">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('Caption_Wj4mcf'),
+                  }}
+                ></span>
               </p>
             </div>
             <div className="home-backup-types1">
@@ -420,183 +880,456 @@ const HomeBackup = (props) => {
                 href="#book"
                 className="home-backup-book-person1 button button-main button-white"
               >
-                <span>Book in person appointment</span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_CDlEri'),
+                    }}
+                  ></span>
+                </span>
               </a>
               <button className="button button-main button-white home-backup-book-person2">
-                <span>Book virtual appointment</span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_6oi3Ul'),
+                    }}
+                  ></span>
+                </span>
               </button>
             </div>
           </div>
         </section>
         <div className="home-backup-search1">
           <div className="home-backup-heading24">
-            <h2 className="home-backup-text126">
-              Search diseases &amp; conditions
+            <h2 className="home-backup-text144">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_0-DlzL'),
+                }}
+              ></span>
             </h2>
-            <p className="home-backup-text127">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            <p className="home-backup-text145">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_OHxFLK'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-content18">
             <div className="home-backup-type-one">
               <div className="home-backup-alphabet">
                 <div data-letter="a" className="letter">
-                  <span className="home-backup-text128">A</span>
+                  <span className="home-backup-text146">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_gaeU2D'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="b" className="letter">
-                  <span className="home-backup-text129">B</span>
+                  <span className="home-backup-text147">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_qJgQ7f'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="c" className="letter">
-                  <span className="home-backup-text130">C</span>
+                  <span className="home-backup-text148">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_fVTGSS'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="d" className="letter">
-                  <span className="home-backup-text131">D</span>
+                  <span className="home-backup-text149">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_MD24zl'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="e" className="letter">
-                  <span className="home-backup-text132">E</span>
+                  <span className="home-backup-text150">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_8CHqjq'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="f" className="letter">
-                  <span className="home-backup-text133">F</span>
+                  <span className="home-backup-text151">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_eWmY2f'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="g" className="letter">
-                  <span className="home-backup-text134">G</span>
+                  <span className="home-backup-text152">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_SNNqgn'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="h" className="letter">
-                  <span className="home-backup-text135">H</span>
+                  <span className="home-backup-text153">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_ITR4SR'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="i" className="letter">
-                  <span className="home-backup-text136">I</span>
+                  <span className="home-backup-text154">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_Ift9LM'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="j" className="letter">
-                  <span className="home-backup-text137">J</span>
+                  <span className="home-backup-text155">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_0eqbYf'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="k" className="letter">
-                  <span className="home-backup-text138">K</span>
+                  <span className="home-backup-text156">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_gsdGmU'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="l" className="letter">
-                  <span className="home-backup-text139">L</span>
+                  <span className="home-backup-text157">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_3l2eUj'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="m" className="letter">
-                  <span className="home-backup-text140">M</span>
+                  <span className="home-backup-text158">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_ahllLC'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="n" className="letter">
-                  <span className="home-backup-text141">N</span>
+                  <span className="home-backup-text159">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_OElJ0y'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="o" className="letter">
-                  <span className="home-backup-text142">O</span>
+                  <span className="home-backup-text160">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_mjUdUC'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="p" className="letter">
-                  <span className="home-backup-text143">P</span>
+                  <span className="home-backup-text161">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_wLzJoj'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="q" className="letter">
-                  <span className="home-backup-text144">Q</span>
+                  <span className="home-backup-text162">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_kLHH0K'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="r" className="letter">
-                  <span className="home-backup-text145">R</span>
+                  <span className="home-backup-text163">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_SqjMuJ'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="s" className="letter">
-                  <span className="home-backup-text146">S</span>
+                  <span className="home-backup-text164">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_FbDnMZ'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="t" className="letter">
-                  <span className="home-backup-text147">T</span>
+                  <span className="home-backup-text165">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_zn_9-X'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="u" className="letter">
-                  <span className="home-backup-text148">U</span>
+                  <span className="home-backup-text166">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text__2shG0'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="v" className="letter">
-                  <span className="home-backup-text149">V</span>
+                  <span className="home-backup-text167">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_ehq5r6'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="w" className="letter">
-                  <span className="home-backup-text150">W</span>
+                  <span className="home-backup-text168">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_dqFSEm'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="x" className="letter">
-                  <span className="home-backup-text151">X</span>
+                  <span className="home-backup-text169">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_7DODwK'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="y" className="letter">
-                  <span className="home-backup-text152">Y</span>
+                  <span className="home-backup-text170">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_w0CD7d'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
                 <div data-letter="z" className="letter">
-                  <span className="home-backup-text153">Z</span>
+                  <span className="home-backup-text171">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_gFAHQ5'),
+                      }}
+                    ></span>
+                  </span>
                 </div>
               </div>
-              <p className="home-backup-text154">
-                You don’t know it’s name? Check out symptom checker below
+              <p className="home-backup-text172">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: translate.raw('text_GQWQzU'),
                   }}
-                />
+                ></span>
               </p>
               <div data-teleport="results" className="home-backup-results">
-                <span className="home-backup-heading25">Results:</span>
+                <span className="home-backup-heading25">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('Heading_-Uaiov'),
+                    }}
+                  ></span>
+                </span>
                 <div data-results="letters" className="home-backup-list1"></div>
               </div>
             </div>
             <div className="home-backup-type-two">
               <div className="home-backup-heading26">
-                <h3 className="home-backup-text155">Symptom checker</h3>
-                <p className="home-backup-text156">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                <h3 className="home-backup-text173">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_35FEob'),
+                    }}
+                  ></span>
+                </h3>
+                <p className="home-backup-text174">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_t5HW29'),
+                    }}
+                  ></span>
                 </p>
               </div>
               <div className="home-backup-symptoms1">
                 <div className="home-backup-row1">
                   <div className="symptom">
-                    <span className="home-backup-text157">Abdominal pain</span>
+                    <span className="home-backup-text175">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_irZ_ZZ'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text158">Chest pain</span>
+                    <span className="home-backup-text176">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_7gUurk'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text159">Constipation</span>
+                    <span className="home-backup-text177">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_ZtGm9w'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text160">Cough</span>
+                    <span className="home-backup-text178">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_NPF1uV'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text161">
-                      Breath difficulty
+                    <span className="home-backup-text179">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_4e4iKI'),
+                        }}
+                      ></span>
                     </span>
                   </div>
                 </div>
                 <div className="home-backup-row2">
                   <div className="symptom">
-                    <span className="home-backup-text162">Red eye</span>
+                    <span className="home-backup-text180">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_9bkrvD'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text163">Foot pain</span>
+                    <span className="home-backup-text181">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_TNh0sW'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text164">Foot swelling</span>
+                    <span className="home-backup-text182">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_bbsCSq'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text165">Headache</span>
+                    <span className="home-backup-text183">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_H-BqW5'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text166">
-                      Heart palpitation
+                    <span className="home-backup-text184">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_Uoc3oq'),
+                        }}
+                      ></span>
                     </span>
                   </div>
                 </div>
                 <div className="home-backup-row3">
                   <div className="symptom">
-                    <span className="home-backup-text167">Knee pain</span>
-                  </div>
-                  <div className="symptom">
-                    <span className="home-backup-text168">Hip pain</span>
-                  </div>
-                  <div className="symptom">
-                    <span className="home-backup-text169">Low back pain</span>
-                  </div>
-                  <div className="symptom">
-                    <span className="home-backup-text170">
-                      Nasal congestion
+                    <span className="home-backup-text185">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text__-h1_e'),
+                        }}
+                      ></span>
                     </span>
                   </div>
                   <div className="symptom">
-                    <span className="home-backup-text171">Neck pain</span>
+                    <span className="home-backup-text186">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_RvgEpd'),
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+                  <div className="symptom">
+                    <span className="home-backup-text187">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_QE1GHP'),
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+                  <div className="symptom">
+                    <span className="home-backup-text188">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_axbtWN'),
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+                  <div className="symptom">
+                    <span className="home-backup-text189">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_T9eQCU'),
+                        }}
+                      ></span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -605,21 +1338,40 @@ const HomeBackup = (props) => {
         </div>
         <section id="book" className="home-backup-book4">
           <div className="home-backup-heading27">
-            <h2 className="home-backup-text172">Book an appointment</h2>
-            <p className="home-backup-text173">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            <h2 className="home-backup-text190">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_t_Zq30'),
+                }}
+              ></span>
+            </h2>
+            <p className="home-backup-text191">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text__Q-J1p'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-form">
             <div className="home-backup-types2">
               <div className="book-type">
-                <span className="home-backup-text174">
-                  In person appointment
+                <span className="home-backup-text192">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_9hI_ZA'),
+                    }}
+                  ></span>
                 </span>
               </div>
               <div className="book-type">
-                <span className="home-backup-text175">Virtual appointment</span>
+                <span className="home-backup-text193">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_1rxbvl'),
+                    }}
+                  ></span>
+                </span>
               </div>
             </div>
             <div className="home-backup-inputs">
@@ -659,34 +1411,29 @@ const HomeBackup = (props) => {
                 className="input book-input"
               />
               <div className="home-backup-lower">
-                <p className="home-backup-text176">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                <p className="home-backup-text194">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_31ZlJy'),
+                    }}
+                  ></span>
                 </p>
                 <div className="home-backup-button">
                   <button className="home-backup-book5 button button-main">
-                    <span>Book</span>
+                    <span>
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_EMwjBl'),
+                        }}
+                      ></span>
+                    </span>
                   </button>
-                  <p className="home-backup-text178">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                    <span className="home-backup-text180">adipiscing elit</span>
-                    <span>
-                      , sed do eiusmod tempor
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: ' ',
-                        }}
-                      />
-                    </span>
-                    <span className="home-backup-text182">incididunt</span>
-                    <span>.</span>
+                  <p className="home-backup-text196">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_9dIJxb'),
+                      }}
+                    ></span>
                   </p>
                 </div>
               </div>
@@ -695,10 +1442,19 @@ const HomeBackup = (props) => {
         </section>
         <section className="home-backup-meet">
           <div className="home-backup-heading28">
-            <h2 className="home-backup-text184">Meet our doctors</h2>
-            <p className="home-backup-text185">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            <h2 className="home-backup-text197">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_HJogxt'),
+                }}
+              ></span>
+            </h2>
+            <p className="home-backup-text198">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_cB2Qag'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-list2">
@@ -717,10 +1473,105 @@ const HomeBackup = (props) => {
               />
             </div>
             <div data-teleport="doctors" className="home-backup-doctors1">
-              <Doctor></Doctor>
-              <Doctor imageSrc="/Doctors/doctor-2-300w.png"></Doctor>
-              <Doctor imageSrc="/Doctors/doctor-3-300w.png"></Doctor>
-              <Doctor imageSrc="/Doctors/doctor-4-300w.png"></Doctor>
+              <Doctor
+                text1={
+                  <Fragment>
+                    <span className="home-backup-text199">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_GM9hO1'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                heading1={
+                  <Fragment>
+                    <span className="home-backup-text200">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_rMCs6b'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+              ></Doctor>
+              <Doctor
+                text1={
+                  <Fragment>
+                    <span className="home-backup-text201">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_dlaXEq'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                heading1={
+                  <Fragment>
+                    <span className="home-backup-text202">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_qf9g8k'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                imageSrc="/Doctors/doctor-2-300w.png"
+              ></Doctor>
+              <Doctor
+                text1={
+                  <Fragment>
+                    <span className="home-backup-text203">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_sWDNWh'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                heading1={
+                  <Fragment>
+                    <span className="home-backup-text204">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_I7_SDy'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                imageSrc="/Doctors/doctor-3-300w.png"
+              ></Doctor>
+              <Doctor
+                text1={
+                  <Fragment>
+                    <span className="home-backup-text205">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_rHNmfZ'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                heading1={
+                  <Fragment>
+                    <span className="home-backup-text206">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_LoLM7W'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                imageSrc="/Doctors/doctor-4-300w.png"
+              ></Doctor>
             </div>
           </div>
           <div className="home-backup-search2">
@@ -730,16 +1581,31 @@ const HomeBackup = (props) => {
               className="home-backup-textinput6 input book-input"
             />
             <button className="button button-main home-backup-book6">
-              <span>Search doctor</span>
+              <span>
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_dJXPVV'),
+                  }}
+                ></span>
+              </span>
             </button>
           </div>
         </section>
         <section className="home-backup-news">
           <div className="home-backup-heading29">
-            <h2 className="home-backup-text187">Read our latest news</h2>
-            <p className="home-backup-text188">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            <h2 className="home-backup-text208">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_1Ksh30'),
+                }}
+              ></span>
+            </h2>
+            <p className="home-backup-text209">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_kXcJf0'),
+                }}
+              ></span>
             </p>
           </div>
           <div className="home-backup-list3">
@@ -753,15 +1619,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-content19">
                 <div className="home-backup-details1">
-                  <span className="home-backup-date2">November 23, 2022</span>
+                  <span className="home-backup-date2">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Date_S6aXT1'),
+                      }}
+                    ></span>
+                  </span>
                   <p className="home-backup-quick-description1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('QuickDescription_frzyVF'),
+                      }}
+                    ></span>
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text189">Read more</span>
+                  <span className="home-backup-text210">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_AFzFc0'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow.svg"
@@ -780,14 +1660,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-content20">
                 <div className="home-backup-details2">
-                  <span className="home-backup-date3">November 23, 2022</span>
+                  <span className="home-backup-date3">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Date_jy2PYP'),
+                      }}
+                    ></span>
+                  </span>
                   <p className="home-backup-quick-description2">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('QuickDescription_iNy_Ly'),
+                      }}
+                    ></span>
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text190">Read more</span>
+                  <span className="home-backup-text211">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_r7EruQ'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -806,15 +1701,29 @@ const HomeBackup = (props) => {
               </div>
               <div className="home-backup-content21">
                 <div className="home-backup-details3">
-                  <span className="home-backup-date4">November 23, 2022</span>
+                  <span className="home-backup-date4">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('Date_5EKlYF'),
+                      }}
+                    ></span>
+                  </span>
                   <p className="home-backup-quick-description3">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('QuickDescription_K-Y9j_'),
+                      }}
+                    ></span>
                   </p>
                 </div>
                 <div className="read-more">
-                  <span className="home-backup-text191">Read more</span>
+                  <span className="home-backup-text212">
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_h3cZko'),
+                      }}
+                    ></span>
+                  </span>
                   <img
                     alt="image"
                     src="/Icons/arrow-2.svg"
@@ -833,8 +1742,12 @@ const HomeBackup = (props) => {
               className="home-backup-image35"
             />
             <div className="home-backup-content22">
-              <h2 className="home-backup-text192">
-                Download our mobile app and book your next appointment
+              <h2 className="home-backup-text213">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_dzBh_a'),
+                  }}
+                ></span>
               </h2>
               <div className="home-backup-buttons">
                 <button className="home-backup-ios button button-main">
@@ -843,7 +1756,13 @@ const HomeBackup = (props) => {
                     src="/Icons/apple.svg"
                     className="home-backup-image36"
                   />
-                  <span>Download for iOS</span>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_9WPZL7'),
+                      }}
+                    ></span>
+                  </span>
                 </button>
                 <button className="button button-main home-backup-android">
                   <img
@@ -851,7 +1770,13 @@ const HomeBackup = (props) => {
                     src="/Icons/android.svg"
                     className="home-backup-image37"
                   />
-                  <span>Download for Android</span>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: translate.raw('text_WGKmEY'),
+                      }}
+                    ></span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -860,40 +1785,65 @@ const HomeBackup = (props) => {
         <Footer
           header2={
             <Fragment>
-              <span className="home-backup-text195">Contact</span>
+              <span className="home-backup-text216">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_55I0v2'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
           link102={
             <Fragment>
-              <span className="home-backup-text196">
-                Office: 1118 Budapest, Budaörsi út 15. I.em. 11.
+              <span className="home-backup-text217">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_PaaMri'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
           link112={
             <Fragment>
-              <span className="home-backup-text197">
-                Tel: 00-36-70-338-2408
+              <span className="home-backup-text218">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_4aG6Hx'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
           header21={
             <Fragment>
-              <span className="home-backup-text198">
-                © 2020 Foodcontrol. Adatkezelési tájékoztató Powered by Bettery
+              <span className="home-backup-text219">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_PghG8f'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
           link1121={
             <Fragment>
-              <span className="home-backup-text199">food@foodcontrol.hu</span>
+              <span className="home-backup-text220">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_sjt0ZT'),
+                  }}
+                ></span>
+              </span>
             </Fragment>
           }
         ></Footer>
         <div>
           <div className="home-backup-container3">
-            <Script
-              html={`<script>
+            <React.Fragment>
+              <React.Fragment>
+                <Script>{`
 const modalOpen = document.querySelectorAll('[data-open]');
 const modalClose = document.querySelectorAll('[data-close]');
 
@@ -910,15 +1860,16 @@ modalClose.forEach(button => {
         modal.style.display = "none";
     });
 });
-</script>
-`}
-            ></Script>
+`}</Script>
+              </React.Fragment>
+            </React.Fragment>
           </div>
         </div>
         <div>
           <div className="home-backup-container5">
-            <Script
-              html={`<script>
+            <React.Fragment>
+              <React.Fragment>
+                <Script>{`
 const dataLetters = document.querySelectorAll("[data-letter]");
 let activeLetters = [];
 const maxResults = 6;
@@ -1005,15 +1956,15 @@ const showResults = () => {
       });
     });
 };
-</script>
-`}
-            ></Script>
+`}</Script>
+              </React.Fragment>
+            </React.Fragment>
           </div>
         </div>
         <div>
           <div className="home-backup-container7">
-            <Script
-              html={`<script>
+            <React.Fragment>
+              <Script>{`
 function scroll(direction) {
   const doctorsDiv = document.querySelector('[data-teleport="doctors"]');
   const scrollAmount = 300;
@@ -1037,19 +1988,19 @@ buttons.forEach(button => {
     scroll(direction);
   });
 });
-</script>`}
-            ></Script>
+`}</Script>
+            </React.Fragment>
           </div>
         </div>
         <div>
           <div className="home-backup-container9">
-            <Script
-              html={`<script>
+            <React.Fragment>
+              <Script>{`
               (function(){
   // Add Font Awesome for icons const fontAwesome = document.createElement('link'); fontAwesome.rel = 'stylesheet'; fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'; document.head.appendChild(fontAwesome);
 })()
-              </script>`}
-            ></Script>
+              `}</Script>
+            </React.Fragment>
           </div>
         </div>
       </div>
@@ -1439,6 +2390,24 @@ buttons.forEach(button => {
             padding-right: var(--dl-layout-space-fiveunits);
             flex-direction: row;
           }
+          .home-backup-text117 {
+            display: inline-block;
+          }
+          .home-backup-text118 {
+            display: inline-block;
+          }
+          .home-backup-text119 {
+            display: inline-block;
+          }
+          .home-backup-text120 {
+            display: inline-block;
+          }
+          .home-backup-text121 {
+            display: inline-block;
+          }
+          .home-backup-text122 {
+            display: inline-block;
+          }
           .home-backup-background {
             right: 0px;
             width: 37%;
@@ -1469,12 +2438,12 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-backup-text117 {
+          .home-backup-text123 {
             font-size: 56px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-backup-text118 {
+          .home-backup-text124 {
             font-size: 18px;
             max-width: 385px;
             line-height: 27px;
@@ -1497,25 +2466,61 @@ buttons.forEach(button => {
             cursor: pointer;
             text-decoration: none;
           }
+          .home-backup-text125 {
+            display: inline-block;
+          }
+          .home-backup-text126 {
+            display: inline-block;
+          }
           .home-backup-practice-wrapper2 {
             cursor: pointer;
             text-decoration: none;
+          }
+          .home-backup-text127 {
+            display: inline-block;
+          }
+          .home-backup-text128 {
+            display: inline-block;
           }
           .home-backup-practice-wrapper3 {
             cursor: pointer;
             text-decoration: none;
           }
+          .home-backup-text129 {
+            display: inline-block;
+          }
+          .home-backup-text130 {
+            display: inline-block;
+          }
           .home-backup-practice-wrapper4 {
             cursor: pointer;
             text-decoration: none;
+          }
+          .home-backup-text131 {
+            display: inline-block;
+          }
+          .home-backup-text132 {
+            display: inline-block;
           }
           .home-backup-practice-wrapper5 {
             cursor: pointer;
             text-decoration: none;
           }
+          .home-backup-text133 {
+            display: inline-block;
+          }
+          .home-backup-text134 {
+            display: inline-block;
+          }
           .home-backup-practice-wrapper6 {
             cursor: pointer;
             text-decoration: none;
+          }
+          .home-backup-text135 {
+            display: inline-block;
+          }
+          .home-backup-text136 {
+            display: inline-block;
           }
           .home-backup-why {
             gap: var(--dl-layout-space-fiveunits);
@@ -1654,7 +2659,7 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-backup-text120 {
+          .home-backup-text138 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
@@ -1699,7 +2704,7 @@ buttons.forEach(button => {
             max-width: 600px;
             line-height: 27px;
           }
-          .home-backup-text121 {
+          .home-backup-text139 {
             font-style: normal;
             font-weight: 600;
             line-height: 24px;
@@ -1821,13 +2826,13 @@ buttons.forEach(button => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-backup-text126 {
+          .home-backup-text144 {
             font-size: 56px;
             max-width: 385px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-backup-text127 {
+          .home-backup-text145 {
             font-size: 18px;
             max-width: 385px;
             line-height: 27px;
@@ -1858,114 +2863,6 @@ buttons.forEach(button => {
             align-items: center;
             justify-content: center;
             grid-template-columns: repeat(10, minmax(60px, 1fr));
-          }
-          .home-backup-text128 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text129 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text130 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text131 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text132 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text133 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text134 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text135 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text136 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text137 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text138 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text139 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text140 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text141 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text142 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text143 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text144 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
-          }
-          .home-backup-text145 {
-            font-size: 20px;
-            font-style: normal;
-            font-family: Inter;
-            font-weight: 600;
           }
           .home-backup-text146 {
             font-size: 20px;
@@ -2016,6 +2913,114 @@ buttons.forEach(button => {
             font-weight: 600;
           }
           .home-backup-text154 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text155 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text156 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text157 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text158 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text159 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text160 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text161 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text162 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text163 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text164 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text165 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text166 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text167 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text168 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text169 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text170 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text171 {
+            font-size: 20px;
+            font-style: normal;
+            font-family: Inter;
+            font-weight: 600;
+          }
+          .home-backup-text172 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2056,12 +3061,12 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-backup-text155 {
+          .home-backup-text173 {
             font-size: 30px;
             font-style: normal;
             font-weight: 600;
           }
-          .home-backup-text156 {
+          .home-backup-text174 {
             max-width: 700px;
             line-height: 24px;
           }
@@ -2082,31 +3087,31 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-backup-text157 {
+          .home-backup-text175 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text158 {
+          .home-backup-text176 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text159 {
+          .home-backup-text177 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text160 {
+          .home-backup-text178 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text161 {
+          .home-backup-text179 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2119,31 +3124,31 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-backup-text162 {
+          .home-backup-text180 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text163 {
+          .home-backup-text181 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text164 {
+          .home-backup-text182 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text165 {
+          .home-backup-text183 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text166 {
+          .home-backup-text184 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2156,31 +3161,31 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-backup-text167 {
+          .home-backup-text185 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text168 {
+          .home-backup-text186 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text169 {
+          .home-backup-text187 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text170 {
+          .home-backup-text188 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text171 {
+          .home-backup-text189 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2207,14 +3212,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-backup-text172 {
+          .home-backup-text190 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-backup-text173 {
+          .home-backup-text191 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2235,13 +3240,13 @@ buttons.forEach(button => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-backup-text174 {
+          .home-backup-text192 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
             white-space: nowrap;
           }
-          .home-backup-text175 {
+          .home-backup-text193 {
             font-style: normal;
             font-family: Inter;
             font-weight: 600;
@@ -2278,7 +3283,7 @@ buttons.forEach(button => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-backup-text176 {
+          .home-backup-text194 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
@@ -2295,21 +3300,11 @@ buttons.forEach(button => {
           .home-backup-book5 {
             width: 100%;
           }
-          .home-backup-text178 {
+          .home-backup-text196 {
             font-size: 10px;
             max-width: 700px;
             text-align: left;
             line-height: 15px;
-          }
-          .home-backup-text180 {
-            color: #2461ff;
-            font-style: normal;
-            font-weight: 600;
-          }
-          .home-backup-text182 {
-            color: #2461ff;
-            font-style: normal;
-            font-weight: 600;
           }
           .home-backup-meet {
             gap: var(--dl-layout-space-fiveunits);
@@ -2329,14 +3324,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-backup-text184 {
+          .home-backup-text197 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-backup-text185 {
+          .home-backup-text198 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2365,6 +3360,30 @@ buttons.forEach(button => {
             display: flex;
             align-items: center;
             flex-direction: row;
+          }
+          .home-backup-text199 {
+            display: inline-block;
+          }
+          .home-backup-text200 {
+            display: inline-block;
+          }
+          .home-backup-text201 {
+            display: inline-block;
+          }
+          .home-backup-text202 {
+            display: inline-block;
+          }
+          .home-backup-text203 {
+            display: inline-block;
+          }
+          .home-backup-text204 {
+            display: inline-block;
+          }
+          .home-backup-text205 {
+            display: inline-block;
+          }
+          .home-backup-text206 {
+            display: inline-block;
           }
           .home-backup-search2 {
             gap: var(--dl-layout-space-oneandhalfunits);
@@ -2396,14 +3415,14 @@ buttons.forEach(button => {
             align-items: center;
             flex-direction: column;
           }
-          .home-backup-text187 {
+          .home-backup-text208 {
             font-size: 56px;
             max-width: 600px;
             font-style: normal;
             text-align: center;
             font-weight: 600;
           }
-          .home-backup-text188 {
+          .home-backup-text209 {
             font-size: 18px;
             max-width: 700px;
             text-align: center;
@@ -2463,7 +3482,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-backup-text189 {
+          .home-backup-text210 {
             color: rgb(255, 255, 255);
             font-style: normal;
             font-weight: 600;
@@ -2519,7 +3538,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-backup-text190 {
+          .home-backup-text211 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
@@ -2575,7 +3594,7 @@ buttons.forEach(button => {
             font-style: normal;
             font-weight: 500;
           }
-          .home-backup-text191 {
+          .home-backup-text212 {
             color: #000000;
             font-style: normal;
             font-weight: 600;
@@ -2615,7 +3634,7 @@ buttons.forEach(button => {
             padding-bottom: 120px;
             justify-content: center;
           }
-          .home-backup-text192 {
+          .home-backup-text213 {
             font-size: 40px;
             max-width: 600px;
             font-style: normal;
@@ -2639,19 +3658,19 @@ buttons.forEach(button => {
             width: 16px;
             object-fit: cover;
           }
-          .home-backup-text195 {
+          .home-backup-text216 {
             display: inline-block;
           }
-          .home-backup-text196 {
+          .home-backup-text217 {
             display: inline-block;
           }
-          .home-backup-text197 {
+          .home-backup-text218 {
             display: inline-block;
           }
-          .home-backup-text198 {
+          .home-backup-text219 {
             display: inline-block;
           }
-          .home-backup-text199 {
+          .home-backup-text220 {
             display: inline-block;
           }
           .home-backup-container3 {
@@ -2665,6 +3684,14 @@ buttons.forEach(button => {
           }
           .home-backup-container9 {
             display: contents;
+          }
+          @media (max-width: 1200px) {
+            .home-backup-header17 {
+              font-size: 62px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 74px;
+            }
           }
           @media (max-width: 991px) {
             .home-backup-hero {
@@ -2763,11 +3790,11 @@ buttons.forEach(button => {
             .home-backup-heading24 {
               align-items: center;
             }
-            .home-backup-text126 {
+            .home-backup-text144 {
               max-width: 100%;
               text-align: center;
             }
-            .home-backup-text127 {
+            .home-backup-text145 {
               text-align: center;
             }
             .home-backup-content18 {
@@ -2788,7 +3815,7 @@ buttons.forEach(button => {
               padding-left: var(--dl-layout-space-fiveunits);
               padding-right: var(--dl-layout-space-fiveunits);
             }
-            .home-backup-text154 {
+            .home-backup-text172 {
               text-align: center;
             }
             .home-backup-type-two {
@@ -2797,10 +3824,10 @@ buttons.forEach(button => {
             .home-backup-heading26 {
               align-items: center;
             }
-            .home-backup-text155 {
+            .home-backup-text173 {
               text-align: center;
             }
-            .home-backup-text156 {
+            .home-backup-text174 {
               text-align: center;
             }
             .home-backup-symptoms1 {
@@ -2930,11 +3957,11 @@ buttons.forEach(button => {
             .home-backup-heading18 {
               gap: var(--dl-layout-space-unit);
             }
-            .home-backup-text117 {
+            .home-backup-text123 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-backup-text118 {
+            .home-backup-text124 {
               font-size: 14px;
               line-height: 21px;
             }
@@ -3051,11 +4078,11 @@ buttons.forEach(button => {
             .home-backup-heading24 {
               gap: var(--dl-layout-space-unit);
             }
-            .home-backup-text126 {
+            .home-backup-text144 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-backup-text127 {
+            .home-backup-text145 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3078,10 +4105,10 @@ buttons.forEach(button => {
             .home-backup-heading27 {
               gap: var(--dl-layout-space-unit);
             }
-            .home-backup-text172 {
+            .home-backup-text190 {
               font-size: 24px;
             }
-            .home-backup-text173 {
+            .home-backup-text191 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3106,10 +4133,10 @@ buttons.forEach(button => {
               gap: var(--dl-layout-space-unit);
               padding-right: 0px;
             }
-            .home-backup-text184 {
+            .home-backup-text197 {
               font-size: 24px;
             }
-            .home-backup-text185 {
+            .home-backup-text198 {
               font-size: 14px;
               max-width: 80%;
             }
@@ -3134,11 +4161,11 @@ buttons.forEach(button => {
             .home-backup-heading29 {
               gap: var(--dl-layout-space-unit);
             }
-            .home-backup-text187 {
+            .home-backup-text208 {
               font-size: 30px;
               line-height: 36px;
             }
-            .home-backup-text188 {
+            .home-backup-text209 {
               font-size: 14px;
               max-width: 80%;
               line-height: 21px;
@@ -3170,7 +4197,7 @@ buttons.forEach(button => {
               padding-right: var(--dl-layout-space-oneandhalfunits);
               padding-bottom: var(--dl-layout-space-threeunits);
             }
-            .home-backup-text192 {
+            .home-backup-text213 {
               max-width: 500px;
             }
             .home-backup-buttons {
@@ -3211,3 +4238,14 @@ buttons.forEach(button => {
 }
 
 export default HomeBackup
+
+export async function getStaticProps(context) {
+  const messages = (await import('/locales/' + context.locale + '.json'))
+    .default
+  return {
+    props: {
+      messages,
+      ...context,
+    },
+  }
+}

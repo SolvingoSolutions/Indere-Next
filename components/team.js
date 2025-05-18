@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Team = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <section
@@ -13,7 +14,13 @@ const Team = (props) => {
           <h2 className="section-title">
             {props.heading ?? (
               <Fragment>
-                <span className="team-text60">The Team</span>
+                <span className="team-text52">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_1uiHd8'),
+                    }}
+                  ></span>
+                </span>
               </Fragment>
             )}
           </h2>
@@ -26,8 +33,12 @@ const Team = (props) => {
                 <h3 className="member-name">
                   {props.heading1 ?? (
                     <Fragment>
-                      <span className="team-text32">
-                        Prof. h.c. Dr. Andras Bittsanszky PhD
+                      <span className="team-text40">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_Ru2AxM'),
+                          }}
+                        ></span>
                       </span>
                     </Fragment>
                   )}
@@ -35,14 +46,12 @@ const Team = (props) => {
                 <p className="member-position">
                   {props.text ?? (
                     <Fragment>
-                      <span className="team-text38">
-                        {' '}
-                        Research director, honorary university professor
+                      <span className="team-text46">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: ' ',
+                            __html: translate.raw('text_MDvcv_'),
                           }}
-                        />
+                        ></span>
                       </span>
                     </Fragment>
                   )}
@@ -52,22 +61,25 @@ const Team = (props) => {
                   <h4>
                     {props.heading3 ?? (
                       <Fragment>
-                        <span className="team-text42">Qualification:</span>
+                        <span className="team-text53">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_3uE2Fo'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
                   <p>
                     {props.text2 ?? (
                       <Fragment>
-                        <span className="team-text59">
-                          {' '}
-                          Agricultural engineer, doctor of plant and
-                          horticulture sciences
+                        <span className="team-text50">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: ' ',
+                              __html: translate.raw('text_N5M2Ol'),
                             }}
-                          />
+                          ></span>
                         </span>
                       </Fragment>
                     )}
@@ -75,27 +87,25 @@ const Team = (props) => {
                   <h4>
                     {props.heading4 ?? (
                       <Fragment>
-                        <span className="team-text35">Introduction:</span>
+                        <span className="team-text33">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_04UJU3'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
                   <p>
                     {props.text3 ?? (
                       <Fragment>
-                        <span className="team-text43">
-                          {' '}
-                          I started my research activity during my university
-                          years. I have been researching the genetic and
-                          physiological responses of plants to various stresses.
-                          My current area of interest is food microbiology and
-                          food hygiene. My research focuses on the agricultural
-                          production and food processing, the primary goal is to
-                          bring safe and good quality food to our table.
+                        <span className="team-text38">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: ' ',
+                              __html: translate.raw('text_8iG5ro'),
                             }}
-                          />
+                          ></span>
                         </span>
                       </Fragment>
                     )}
@@ -105,7 +115,13 @@ const Team = (props) => {
                   <h4>
                     {props.heading5 ?? (
                       <Fragment>
-                        <span className="team-text40">Contact:</span>
+                        <span className="team-text41">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_iQPgZT'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
@@ -117,9 +133,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Email"
-                                className="team-text50 email icon-link"
+                                className="team-text32 email icon-link"
                               >
-                                <span className="team-text51 fas fa-envelope"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_cd_DSG'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -136,9 +156,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Facebook"
-                                className="team-text33 facebook icon-link"
+                                className="team-text34 facebook icon-link"
                               >
-                                <span className="team-text34 fab fa-facebook-f"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_NZKJuI'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -152,9 +176,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Twitter"
-                                className="team-text48 twitter icon-link"
+                                className="team-text36 twitter icon-link"
                               >
-                                <span className="team-text49 fa-twitter fab"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_ILbKFm'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -171,9 +199,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="LinkedIn"
-                                className="team-text55 linkedin icon-link"
+                                className="team-text48 linkedin icon-link"
                               >
-                                <span className="team-text56 fab fa-linkedin-in"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_6V2tVl'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -192,8 +224,12 @@ const Team = (props) => {
                 <h3 className="member-name">
                   {props.heading2 ?? (
                     <Fragment>
-                      <span className="team-text52">
-                        Dr. Andras Jozsef Toth, PhD
+                      <span className="team-text35">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_50XQR1'),
+                          }}
+                        ></span>
                       </span>
                     </Fragment>
                   )}
@@ -201,7 +237,13 @@ const Team = (props) => {
                 <p className="member-position">
                   {props.text1 ?? (
                     <Fragment>
-                      <span className="team-text44">Researcher</span>
+                      <span className="team-text39">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_iu7D9W'),
+                          }}
+                        ></span>
+                      </span>
                     </Fragment>
                   )}
                 </p>
@@ -210,22 +252,25 @@ const Team = (props) => {
                   <h4>
                     {props.heading6 ?? (
                       <Fragment>
-                        <span className="team-text36">Qualification:</span>
+                        <span className="team-text42">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_h2RX-m'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
                   <p>
                     {props.text4 ?? (
                       <Fragment>
-                        <span className="team-text41">
-                          {' '}
-                          MBA - Master of Business Administration, doctor of
-                          management and business administration
+                        <span className="team-text43">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: ' ',
+                              __html: translate.raw('text_EtneGl'),
                             }}
-                          />
+                          ></span>
                         </span>
                       </Fragment>
                     )}
@@ -233,30 +278,25 @@ const Team = (props) => {
                   <h4>
                     {props.heading7 ?? (
                       <Fragment>
-                        <span className="team-text37">Introduction:</span>
+                        <span className="team-text37">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_Z1dHP8'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
                   <p>
                     {props.text5 ?? (
                       <Fragment>
-                        <span className="team-text39">
-                          {' '}
-                          I graduated from Pannon University of Veszprém with an
-                          MBA in economics, then obtained PhD at the Doctoral
-                          School of Management and Business Administration at
-                          Szent István University. I have more than 15 years of
-                          experience in the hospitality / food industry, where I
-                          am part of the processes that affect the sector on
-                          every day. My research interests are food safety
-                          management, food security and the applicability of
-                          rapid microbiological methods in food product
-                          development.
+                        <span className="team-text47">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: ' ',
+                              __html: translate.raw('text_6--i0z'),
                             }}
-                          />
+                          ></span>
                         </span>
                       </Fragment>
                     )}
@@ -266,7 +306,13 @@ const Team = (props) => {
                   <h4>
                     {props.heading8 ?? (
                       <Fragment>
-                        <span className="team-text45">Contact:</span>
+                        <span className="team-text51">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: translate.raw('text_Ydb6iu'),
+                            }}
+                          ></span>
+                        </span>
                       </Fragment>
                     )}
                   </h4>
@@ -278,9 +324,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Email"
-                                className="team-text57 email icon-link"
+                                className="team-text44 email icon-link"
                               >
-                                <span className="team-text58 fas fa-envelope"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_FH-hga'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -297,9 +347,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Facebook"
-                                className="team-text46 facebook icon-link"
+                                className="team-text45 facebook icon-link"
                               >
-                                <span className="team-text47 fab fa-facebook-f"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_XhIocw'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -313,9 +367,13 @@ const Team = (props) => {
                             <a href="#">
                               <span
                                 aria-label="Twitter"
-                                className="team-text53 twitter icon-link"
+                                className="team-text49 twitter icon-link"
                               >
-                                <span className="team-text54 fa-twitter fab"></span>
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: translate.raw('text_-V5DRq'),
+                                  }}
+                                ></span>
                               </span>
                             </a>
                           </Fragment>
@@ -341,7 +399,7 @@ const Team = (props) => {
             display: inline-block;
           }
           .team-text34 {
-            font-style: italic;
+            display: inline-block;
           }
           .team-text35 {
             display: inline-block;
@@ -380,45 +438,24 @@ const Team = (props) => {
             display: inline-block;
           }
           .team-text47 {
-            font-style: italic;
+            display: inline-block;
           }
           .team-text48 {
             display: inline-block;
           }
           .team-text49 {
-            font-style: italic;
+            display: inline-block;
           }
           .team-text50 {
             display: inline-block;
           }
           .team-text51 {
-            font-style: italic;
+            display: inline-block;
           }
           .team-text52 {
             display: inline-block;
           }
           .team-text53 {
-            display: inline-block;
-          }
-          .team-text54 {
-            font-style: italic;
-          }
-          .team-text55 {
-            display: inline-block;
-          }
-          .team-text56 {
-            font-style: italic;
-          }
-          .team-text57 {
-            display: inline-block;
-          }
-          .team-text58 {
-            font-style: italic;
-          }
-          .team-text59 {
-            display: inline-block;
-          }
-          .team-text60 {
             display: inline-block;
           }
         `}
@@ -428,63 +465,63 @@ const Team = (props) => {
 }
 
 Team.defaultProps = {
-  imageSrc: 'https://example.com/images/member1.jpg',
-  heading1: undefined,
-  text7: undefined,
+  text6: undefined,
   heading4: undefined,
-  heading6: undefined,
-  heading7: undefined,
-  text: undefined,
-  text5: undefined,
-  heading5: undefined,
-  text4: undefined,
-  heading3: undefined,
   imageAlt: 'Prof. h.c. Dr. Andras Bittsanszky PhD',
+  text7: undefined,
+  heading2: undefined,
+  imageAlt1: 'Dr. Andras Jozsef Toth, PhD',
+  imageSrc1: 'https://example.com/images/member2.jpg',
+  text8: undefined,
+  heading7: undefined,
   text3: undefined,
   text1: undefined,
-  heading8: undefined,
-  text11: undefined,
-  imageAlt1: 'Dr. Andras Jozsef Toth, PhD',
-  text8: undefined,
-  text6: undefined,
-  imageSrc1: 'https://example.com/images/member2.jpg',
-  heading2: undefined,
-  text12: undefined,
-  text9: undefined,
-  text10: undefined,
-  text2: undefined,
+  heading1: undefined,
+  heading5: undefined,
   rootClassName: '',
+  heading6: undefined,
+  text4: undefined,
+  text10: undefined,
+  text11: undefined,
+  imageSrc: 'https://example.com/images/member1.jpg',
+  text: undefined,
+  text5: undefined,
+  text9: undefined,
+  text12: undefined,
+  text2: undefined,
+  heading8: undefined,
   heading: undefined,
+  heading3: undefined,
 }
 
 Team.propTypes = {
-  imageSrc: PropTypes.string,
-  heading1: PropTypes.element,
-  text7: PropTypes.element,
+  text6: PropTypes.element,
   heading4: PropTypes.element,
-  heading6: PropTypes.element,
-  heading7: PropTypes.element,
-  text: PropTypes.element,
-  text5: PropTypes.element,
-  heading5: PropTypes.element,
-  text4: PropTypes.element,
-  heading3: PropTypes.element,
   imageAlt: PropTypes.string,
+  text7: PropTypes.element,
+  heading2: PropTypes.element,
+  imageAlt1: PropTypes.string,
+  imageSrc1: PropTypes.string,
+  text8: PropTypes.element,
+  heading7: PropTypes.element,
   text3: PropTypes.element,
   text1: PropTypes.element,
-  heading8: PropTypes.element,
-  text11: PropTypes.element,
-  imageAlt1: PropTypes.string,
-  text8: PropTypes.element,
-  text6: PropTypes.element,
-  imageSrc1: PropTypes.string,
-  heading2: PropTypes.element,
-  text12: PropTypes.element,
-  text9: PropTypes.element,
-  text10: PropTypes.element,
-  text2: PropTypes.element,
+  heading1: PropTypes.element,
+  heading5: PropTypes.element,
   rootClassName: PropTypes.string,
+  heading6: PropTypes.element,
+  text4: PropTypes.element,
+  text10: PropTypes.element,
+  text11: PropTypes.element,
+  imageSrc: PropTypes.string,
+  text: PropTypes.element,
+  text5: PropTypes.element,
+  text9: PropTypes.element,
+  text12: PropTypes.element,
+  text2: PropTypes.element,
+  heading8: PropTypes.element,
   heading: PropTypes.element,
+  heading3: PropTypes.element,
 }
 
 export default Team

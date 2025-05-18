@@ -64,8 +64,13 @@ export default Footer
 
 export async function getStaticProps(context) {
   try {
+    const messages = (await import('/locales/' + context.locale + '.json'))
+      .default
     const response = await getEntityByAttribute({
       ...context?.params,
+      ...(context?.locale && {
+        locale: context.locale,
+      }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
         'query Footer($value:ID!,$locale:String){Footer(id:$value,locale:$locale){_meta{createdAt updatedAt id}title sections{__typename...on CompFooterSection{_meta{createdAt updatedAt id}links{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}sectionTitle}}legalSection{__typename...on CompButtonExternalLinks{_meta{createdAt updatedAt id}url title description}...on CompButton{_meta{createdAt updatedAt id}title }}}}',
@@ -79,6 +84,7 @@ export async function getStaticProps(context) {
     }
     return {
       props: {
+        messages,
         footerEntity: response?.data?.[0],
         ...response?.meta,
       },

@@ -1,17 +1,42 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
 
 const Features = (props) => {
+  const translate = useTranslations()
   return (
     <>
       <div className="features-section quick-links">
         <div className="features-heading">
-          <h3 className="features-header">{props.title}</h3>
+          <h3 className="features-header">
+            {props.title1 ?? (
+              <Fragment>
+                <span className="features-text3">
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: translate.raw('text_vlpDaD'),
+                    }}
+                  ></span>
+                </span>
+              </Fragment>
+            )}
+          </h3>
           <img alt="image" src={props.icon} className="features-icon" />
         </div>
-        <p className="features-text">{props.description}</p>
+        <p className="features-text1">
+          {props.description1 ?? (
+            <Fragment>
+              <span className="features-text2">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_Mhjxfg'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          )}
+        </p>
         <div className="features-divider"></div>
       </div>
       <style jsx>
@@ -35,7 +60,7 @@ const Features = (props) => {
             width: 20px;
             object-fit: cover;
           }
-          .features-text {
+          .features-text1 {
             color: rgb(255, 255, 255);
             width: 100%;
             max-width: 300px;
@@ -44,6 +69,12 @@ const Features = (props) => {
           .features-divider {
             border: 2px dashed rgba(120, 120, 120, 0.4);
             display: none;
+          }
+          .features-text2 {
+            display: inline-block;
+          }
+          .features-text3 {
+            display: inline-block;
           }
           @media (max-width: 991px) {
             .features-section {
@@ -63,7 +94,7 @@ const Features = (props) => {
               font-size: 20px;
               line-height: 24px;
             }
-            .features-text {
+            .features-text1 {
               font-size: 14px;
               line-height: 21px;
             }
@@ -75,15 +106,15 @@ const Features = (props) => {
 }
 
 Features.defaultProps = {
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  description1: undefined,
+  title1: undefined,
   icon: '/Icons/arrow.svg',
-  title: 'Virtual Assistant',
 }
 
 Features.propTypes = {
-  description: PropTypes.string,
+  description1: PropTypes.element,
+  title1: PropTypes.element,
   icon: PropTypes.string,
-  title: PropTypes.string,
 }
 
 export default Features
