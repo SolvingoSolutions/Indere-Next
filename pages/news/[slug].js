@@ -499,7 +499,7 @@ export async function getStaticProps(context) {
       }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
-        'query MyQuery($value:String,$locale:String){allNews(locale:$locale, where: {slug:{eq: $value}}){edges{node{_meta{createdAt updatedAt id}title body{json connections{__typename  }}imageTitle heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}slug tags }}}}',
+        'query MyQuery($value:String,$locale:String){allNews(locale:$locale, where: {slug:{eq: $value}}){edges{node{_meta{createdAt updatedAt id}body{json connections{__typename  }}slug tags title heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}imageTitle}}}}',
       attribute: 'slug',
       locale: context?.locale ?? '',
     })

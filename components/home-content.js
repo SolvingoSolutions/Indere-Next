@@ -250,23 +250,21 @@ const HomeContent = (props) => {
                   <div className="news-grid">
                     <Repeater
                       items={params}
-                      renderItem={(context_6xpo6y) => (
+                      renderItem={(context_mc7j9y) => (
                         <Fragment>
                           <article className="news-card">
                             <div className="news-image">
                               <img
                                 alt={props.imageAlt11}
-                                src={context_6xpo6y?.heroImage?.url}
+                                src={context_mc7j9y?.heroImage?.url}
                               />
                               <span className="news-tag">
-                                {context_6xpo6y?.tags}
+                                {context_mc7j9y?.tags}
                               </span>
                             </div>
                             <div className="news-content">
                               <h3 className="news-title">
-                                {[0]?.title}
-                                {context_6xpo6y?.title}
-                                {context_6xpo6y?.title}
+                                {context_mc7j9y?.title}
                               </h3>
                               <p className="news-excerpt">
                                 {props.text21 ?? (
@@ -283,11 +281,9 @@ const HomeContent = (props) => {
                               </p>
                               <div className="news-meta">
                                 <span className="news-date">
-                                  {[0]?.createdAt}
-                                  {context_6xpo6y?.createdAt}
-                                  {context_6xpo6y?.createdAt}
+                                  {context_mc7j9y?.createdAt}
                                 </span>
-                                <Link href={`/news/${context_6xpo6y?.slug}`}>
+                                <Link href={`/news/${context_mc7j9y?.slug}`}>
                                   <a>
                                     <span className="home-content-text26 news-link">
                                       {props.text22 ?? (
@@ -317,10 +313,10 @@ const HomeContent = (props) => {
               params={{
                 projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
                 query:
-                  'query MyQuery($first: Int, $after: String, $locale: String){allNews(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}title body{json connections{__typename  }}imageTitle heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}slug tags }}}}',
+                  'query MyQuery($first: Int, $after: String, $locale: String){allNews(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}body{json connections{__typename  }}slug tags title heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}imageTitle}}}}',
                 locale: props?.locale ?? '',
                 page: 1,
-                perPage: 6,
+                perPage: 100,
               }}
             />
             <div className="blog-cta">

@@ -147,28 +147,28 @@ const News = (props) => {
                   <div className="news-grid">
                     <Repeater
                       items={params}
-                      renderItem={(context_9jhes5d3) => (
+                      renderItem={(context_iio43n) => (
                         <Fragment>
                           <article className="news-card">
                             <div className="news-image">
                               <img
                                 alt="School Catering Regulations"
-                                src={context_9jhes5d3?.heroImage?.url}
+                                src={context_iio43n?.heroImage?.url}
                               />
-                              <span className="news-tag">Text</span>
+                              <span className="news-tag">
+                                {context_iio43n?.tags}
+                              </span>
                             </div>
                             <div className="news-content">
                               <h3 className="news-title">
-                                {[0]?.title}
-                                {context_9jhes5d3?.title}
+                                {context_iio43n?.title}
                               </h3>
                               <p className="news-excerpt">Text</p>
                               <div className="news-meta">
                                 <span className="news-date">
-                                  {[0]?.createdAt}
-                                  {context_9jhes5d3?.createdAt}
+                                  {context_iio43n?.createdAt}
                                 </span>
-                                <Link href={`/news/${context_9jhes5d3?.slug}`}>
+                                <Link href={`/news/${context_iio43n?.slug}`}>
                                   <a>
                                     <span className="news-text24 news-link">
                                       <span
@@ -191,7 +191,7 @@ const News = (props) => {
               params={{
                 projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
                 query:
-                  'query MyQuery($first: Int, $after: String, $locale: String){allNews(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}title body{json connections{__typename  }}imageTitle heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}slug tags }}}}',
+                  'query MyQuery($first: Int, $after: String, $locale: String){allNews(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}body{json connections{__typename  }}slug tags title heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}imageTitle}}}}',
                 locale: props?.locale ?? '',
                 page: 1,
                 perPage: 100,
