@@ -119,7 +119,7 @@ const ScientificProjects = (props) => {
         ></Navbar>
         <section className="projects-intro">
           <h1 className="research-title">
-            <span>Kutatócsoportok</span>
+            <span>Kutatócsoportokok</span>
             <br />
           </h1>
           <div className="projects-intro-container">
