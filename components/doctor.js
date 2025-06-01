@@ -108,7 +108,7 @@ const Doctor = (props) => {
 Doctor.defaultProps = {
   text1: undefined,
   heading1: undefined,
-  imageSrc: '/Doctors/doctor-1-300w.png',
+  imageSrc: 'https://play.teleporthq.io/static/svg/placeholders/no-image.svg',
   imageAlt: 'image',
 }
 

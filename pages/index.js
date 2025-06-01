@@ -4,33 +4,69 @@ import Head from 'next/head'
 import { useTranslations } from 'next-intl'
 
 import Navbar from '../components/navbar'
-import Hero from '../components/hero'
-import Home1 from '../components/home1'
+import HomeContent from '../components/home-content'
 import Footer1 from '../components/footer1'
 
-const HomeSrc = (props) => {
+const Home = (props) => {
   const translate = useTranslations()
   return (
     <>
-      <div className="home-src-container">
+      <div className="home-container">
         <Head>
           <title>Indere</title>
           <meta property="og:title" content="Indere" />
         </Head>
         <Navbar
-          text={
+          link1={
             <Fragment>
-              <span className="home-src-text10">
-                <img alt="Food Control Logo" src="assets/logo.png" />
+              <span className="home-text10">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_R60_p2'),
+                  }}
+                ></span>
               </span>
             </Fragment>
           }
-          text1={
+          link2={
             <Fragment>
-              <span className="home-src-text11">
+              <span className="home-text11">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_NUrzlA'),
+                    __html: translate.raw('text_9mbSwW'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          link3={
+            <Fragment>
+              <span className="home-text12">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_tnH01w'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          link4={
+            <Fragment>
+              <span className="home-text13">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_I9Wfwj'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          link5={
+            <Fragment>
+              <span className="home-text14">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_CItZQM'),
                   }}
                 ></span>
               </span>
@@ -38,10 +74,10 @@ const HomeSrc = (props) => {
           }
           text2={
             <Fragment>
-              <span className="home-src-text12">
+              <span className="home-text15">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_WGa9kV'),
+                    __html: translate.raw('text_H2QuKX'),
                   }}
                 ></span>
               </span>
@@ -49,10 +85,10 @@ const HomeSrc = (props) => {
           }
           text3={
             <Fragment>
-              <span className="home-src-text13">
+              <span className="home-text16">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_9kWZZN'),
+                    __html: translate.raw('text_aj7N0s'),
                   }}
                 ></span>
               </span>
@@ -60,10 +96,10 @@ const HomeSrc = (props) => {
           }
           text4={
             <Fragment>
-              <span className="home-src-text14">
+              <span className="home-text17">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_IplmZv'),
+                    __html: translate.raw('text_PZBrjJ'),
                   }}
                 ></span>
               </span>
@@ -71,10 +107,79 @@ const HomeSrc = (props) => {
           }
           text5={
             <Fragment>
-              <span className="home-src-text15">
+              <span className="home-text18">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_2twMLp'),
+                    __html: translate.raw('text_8uhXmo'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          rootClassName="navbarroot-class-name"
+        ></Navbar>
+        <HomeContent
+          text={
+            <Fragment>
+              <span className="home-text19">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_fR-8-w'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text1={
+            <Fragment>
+              <span className="home-text20">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text__BcsqO'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text2={
+            <Fragment>
+              <span className="home-text21">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_lIW4iq'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text3={
+            <Fragment>
+              <span className="home-text22">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_7EOogA'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text4={
+            <Fragment>
+              <span className="home-text23">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ag54hP'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text5={
+            <Fragment>
+              <span className="home-text24">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_rh03zt'),
                   }}
                 ></span>
               </span>
@@ -82,10 +187,10 @@ const HomeSrc = (props) => {
           }
           text6={
             <Fragment>
-              <span className="home-src-text16">
+              <span className="home-text25">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_CRTnel'),
+                    __html: translate.raw('text_aWVtMd'),
                   }}
                 ></span>
               </span>
@@ -93,10 +198,10 @@ const HomeSrc = (props) => {
           }
           text7={
             <Fragment>
-              <span className="home-src-text17">
+              <span className="home-text26">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_QrPkRO'),
+                    __html: translate.raw('text__e5meD'),
                   }}
                 ></span>
               </span>
@@ -104,10 +209,10 @@ const HomeSrc = (props) => {
           }
           text8={
             <Fragment>
-              <span className="home-src-text18">
+              <span className="home-text27">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_vznvxn'),
+                    __html: translate.raw('text_xvUGhG'),
                   }}
                 ></span>
               </span>
@@ -115,10 +220,10 @@ const HomeSrc = (props) => {
           }
           text9={
             <Fragment>
-              <span className="home-src-text19">
+              <span className="home-text28">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_gx4Awc'),
+                    __html: translate.raw('text_tAFHN1'),
                   }}
                 ></span>
               </span>
@@ -126,10 +231,10 @@ const HomeSrc = (props) => {
           }
           text10={
             <Fragment>
-              <span className="home-src-text20">
+              <span className="home-text29">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_sCOzyQ'),
+                    __html: translate.raw('text_OJ-LXF'),
                   }}
                 ></span>
               </span>
@@ -137,10 +242,10 @@ const HomeSrc = (props) => {
           }
           text11={
             <Fragment>
-              <span className="home-src-text21">
+              <span className="home-text30">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_rlRnPg'),
+                    __html: translate.raw('text_xzkABA'),
                   }}
                 ></span>
               </span>
@@ -148,80 +253,54 @@ const HomeSrc = (props) => {
           }
           text12={
             <Fragment>
-              <span className="home-src-text22">
+              <span className="home-text31">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_ArYoug'),
+                    __html: translate.raw('text_ndQGi0'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-        ></Navbar>
-        <Hero
-          heading1={
+          text13={
             <Fragment>
-              <span className="home-src-text23">
+              <span className="home-text32">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_P5S_lq'),
+                    __html: translate.raw('text_K1KeO2'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text3={
+          text14={
             <Fragment>
-              <span className="home-src-text24">
+              <span className="home-text33">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_tFUqu2'),
+                    __html: translate.raw('text_YQkKaH'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text4={
+          text15={
             <Fragment>
-              <span className="home-src-text25">
+              <span className="home-text34">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_o6vr-w'),
+                    __html: translate.raw('text_Dw3dIu'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text5={
+          text16={
             <Fragment>
-              <span className="home-src-text26">
+              <span className="home-text35">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_1VRFNG'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-        ></Hero>
-        <Home1
-          heading12={
-            <Fragment>
-              <span className="home-src-text27">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_U39Sr_'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading13={
-            <Fragment>
-              <span className="home-src-text28">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_ZnKkZx'),
+                    __html: translate.raw('text_aIViN-'),
                   }}
                 ></span>
               </span>
@@ -229,21 +308,10 @@ const HomeSrc = (props) => {
           }
           text17={
             <Fragment>
-              <span className="home-src-text29">
+              <span className="home-text36">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_C4AMaL'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading14={
-            <Fragment>
-              <span className="home-src-text30">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_wD1gEt'),
+                    __html: translate.raw('text_5DAjQe'),
                   }}
                 ></span>
               </span>
@@ -251,21 +319,10 @@ const HomeSrc = (props) => {
           }
           text18={
             <Fragment>
-              <span className="home-src-text31">
+              <span className="home-text37">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_8-1vlO'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading15={
-            <Fragment>
-              <span className="home-src-text32">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_vZLY1c'),
+                    __html: translate.raw('text_gLSlmL'),
                   }}
                 ></span>
               </span>
@@ -273,320 +330,32 @@ const HomeSrc = (props) => {
           }
           text19={
             <Fragment>
-              <span className="home-src-text33">
+              <span className="home-text38">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_hWW9WI'),
+                    __html: translate.raw('text_ebYNSf'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          heading16={
+          heading={
             <Fragment>
-              <span className="home-src-text34">
+              <span className="home-text39">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_ZHgNaL'),
+                    __html: translate.raw('text_kFBBcO'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          button4={
+          heading1={
             <Fragment>
-              <span className="home-src-text35">
+              <span className="home-text40">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_dDws24'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          button5={
-            <Fragment>
-              <span className="home-src-text36">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_tDM1Pt'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          button6={
-            <Fragment>
-              <span className="home-src-text37">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_bpBYgy'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          button7={
-            <Fragment>
-              <span className="home-src-text38">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_ElXdol'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text20={
-            <Fragment>
-              <span className="home-src-text39">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_SfmGTP'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text21={
-            <Fragment>
-              <span className="home-src-text40">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_Qltyec'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading17={
-            <Fragment>
-              <span className="home-src-text41">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_ljkVVf'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text22={
-            <Fragment>
-              <span className="home-src-text42">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_NFm8f6'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text23={
-            <Fragment>
-              <span className="home-src-text43">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_BanNtE'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text24={
-            <Fragment>
-              <span className="home-src-text44">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_qpjfYX'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading18={
-            <Fragment>
-              <span className="home-src-text45">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_BecXAk'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text25={
-            <Fragment>
-              <span className="home-src-text46">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_rP8it0'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text26={
-            <Fragment>
-              <span className="home-src-text47">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_wfNgh9'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text27={
-            <Fragment>
-              <span className="home-src-text48">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_iD55DE'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading19={
-            <Fragment>
-              <span className="home-src-text49">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_j692Hu'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text28={
-            <Fragment>
-              <span className="home-src-text50">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_k1E_U3'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text29={
-            <Fragment>
-              <span className="home-src-text51">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_SfLI5B'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text30={
-            <Fragment>
-              <span className="home-src-text52">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_TabN6S'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading20={
-            <Fragment>
-              <span className="home-src-text53">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_M6iJGQ'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text31={
-            <Fragment>
-              <span className="home-src-text54">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_mstk2_'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text32={
-            <Fragment>
-              <span className="home-src-text55">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_h2wNIR'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading21={
-            <Fragment>
-              <span className="home-src-text56">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_bh8IRa'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading22={
-            <Fragment>
-              <span className="home-src-text57">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_-VYWDt'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text33={
-            <Fragment>
-              <span className="home-src-text58">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_TnucPQ'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          heading23={
-            <Fragment>
-              <span className="home-src-text59">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_frClEe'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-        ></Home1>
-        <Footer1
-          text16={
-            <Fragment>
-              <span className="home-src-text60">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_MR1CEq'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text17={
-            <Fragment>
-              <span className="home-src-text61">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_7sA_E8'),
+                    __html: translate.raw('text_63XMTL'),
                   }}
                 ></span>
               </span>
@@ -594,10 +363,10 @@ const HomeSrc = (props) => {
           }
           heading2={
             <Fragment>
-              <span className="home-src-text62">
+              <span className="home-text41">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_pCivZC'),
+                    __html: translate.raw('text_sRtVna'),
                   }}
                 ></span>
               </span>
@@ -605,120 +374,254 @@ const HomeSrc = (props) => {
           }
           heading3={
             <Fragment>
-              <span className="home-src-text63">
+              <span className="home-text42">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_InOm2w'),
+                    __html: translate.raw('text_q3Rj8g'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text18={
+          heading4={
             <Fragment>
-              <span className="home-src-text64">
+              <span className="home-text43">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_XxMSxG'),
+                    __html: translate.raw('text_0RycUs'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text19={
+          heading5={
             <Fragment>
-              <span className="home-src-text65">
+              <span className="home-text44">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_hwuuyV'),
+                    __html: translate.raw('text_dzDPKd'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text20={
+          heading6={
             <Fragment>
-              <span className="home-src-text66">
+              <span className="home-text45">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_dze8PY'),
+                    __html: translate.raw('text_rjksKi'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text21={
+          heading7={
             <Fragment>
-              <span className="home-src-text67">
+              <span className="home-text46">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_VyVTXp'),
+                    __html: translate.raw('text_wy-1bK'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text22={
+          heading8={
             <Fragment>
-              <span className="home-src-text68">
+              <span className="home-text47">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_BVaLyF'),
+                    __html: translate.raw('text_ZP4IN-'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text23={
+          heading9={
             <Fragment>
-              <span className="home-src-text69">
+              <span className="home-text48">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_z0e_Gm'),
+                    __html: translate.raw('text_yXs1vQ'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text24={
+          heading10={
             <Fragment>
-              <span className="home-src-text70">
+              <span className="home-text49">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_SV0TVC'),
+                    __html: translate.raw('text_vDgj4L'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text25={
+          heading11={
             <Fragment>
-              <span className="home-src-text71">
+              <span className="home-text50">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_kPRN3K'),
+                    __html: translate.raw('text_gP6BPm'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text26={
+        ></HomeContent>
+        <Footer1
+          text={
             <Fragment>
-              <span className="home-src-text72">
+              <span className="home-text51">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_CXGrJK'),
+                    __html: translate.raw('text_QnawwY'),
                   }}
                 ></span>
               </span>
             </Fragment>
           }
-          text27={
+          text1={
             <Fragment>
-              <span className="home-src-text73">
+              <span className="home-text52">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_mdE4Kt'),
+                    __html: translate.raw('text_tbNKyQ'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text2={
+            <Fragment>
+              <span className="home-text53">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_AERHpN'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text3={
+            <Fragment>
+              <span className="home-text54">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ebesLK'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text7={
+            <Fragment>
+              <span className="home-text55">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_q7VIzb'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text8={
+            <Fragment>
+              <span className="home-text56">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_vQ1Iz6'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text9={
+            <Fragment>
+              <span className="home-text57">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_chEL3t'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text11={
+            <Fragment>
+              <span className="home-text58">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_MrFgd8'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text12={
+            <Fragment>
+              <span className="home-text59">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_G_Qq_j'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text13={
+            <Fragment>
+              <span className="home-text60">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_QgUu2p'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text14={
+            <Fragment>
+              <span className="home-text61">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_QA0Uwc'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text91={
+            <Fragment>
+              <span className="home-text62">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_BsJh81'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading={
+            <Fragment>
+              <span className="home-text63">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_6eiWQs'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          heading1={
+            <Fragment>
+              <span className="home-text64">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_Thz2rS'),
                   }}
                 ></span>
               </span>
@@ -728,7 +631,7 @@ const HomeSrc = (props) => {
       </div>
       <style jsx>
         {`
-          .home-src-container {
+          .home-container {
             color: var(--text-color);
             width: 100%;
             display: flex;
@@ -740,196 +643,169 @@ const HomeSrc = (props) => {
             scroll-behavior: smooth;
             background-color: var(--bg-white);
           }
-          .home-src-text10 {
+          .home-text10 {
             display: inline-block;
           }
-          .home-src-text11 {
+          .home-text11 {
             display: inline-block;
           }
-          .home-src-text12 {
+          .home-text12 {
             display: inline-block;
           }
-          .home-src-text13 {
+          .home-text13 {
             display: inline-block;
           }
-          .home-src-text14 {
+          .home-text14 {
             display: inline-block;
           }
-          .home-src-text15 {
+          .home-text15 {
             display: inline-block;
           }
-          .home-src-text16 {
+          .home-text16 {
             display: inline-block;
           }
-          .home-src-text17 {
+          .home-text17 {
             display: inline-block;
           }
-          .home-src-text18 {
+          .home-text18 {
             display: inline-block;
           }
-          .home-src-text19 {
+          .home-text19 {
             display: inline-block;
           }
-          .home-src-text20 {
+          .home-text20 {
             display: inline-block;
           }
-          .home-src-text21 {
+          .home-text21 {
             display: inline-block;
           }
-          .home-src-text22 {
+          .home-text22 {
             display: inline-block;
           }
-          .home-src-text23 {
+          .home-text23 {
             display: inline-block;
           }
-          .home-src-text24 {
+          .home-text24 {
             display: inline-block;
           }
-          .home-src-text25 {
+          .home-text25 {
             display: inline-block;
           }
-          .home-src-text26 {
+          .home-text26 {
             display: inline-block;
           }
-          .home-src-text27 {
+          .home-text27 {
             display: inline-block;
           }
-          .home-src-text28 {
+          .home-text28 {
             display: inline-block;
           }
-          .home-src-text29 {
+          .home-text29 {
             display: inline-block;
           }
-          .home-src-text30 {
+          .home-text30 {
             display: inline-block;
           }
-          .home-src-text31 {
+          .home-text31 {
             display: inline-block;
           }
-          .home-src-text32 {
+          .home-text32 {
             display: inline-block;
           }
-          .home-src-text33 {
+          .home-text33 {
             display: inline-block;
           }
-          .home-src-text34 {
+          .home-text34 {
             display: inline-block;
           }
-          .home-src-text35 {
+          .home-text35 {
             display: inline-block;
           }
-          .home-src-text36 {
+          .home-text36 {
             display: inline-block;
           }
-          .home-src-text37 {
+          .home-text37 {
             display: inline-block;
           }
-          .home-src-text38 {
+          .home-text38 {
             display: inline-block;
           }
-          .home-src-text39 {
+          .home-text39 {
             display: inline-block;
           }
-          .home-src-text40 {
+          .home-text40 {
             display: inline-block;
           }
-          .home-src-text41 {
+          .home-text41 {
             display: inline-block;
           }
-          .home-src-text42 {
+          .home-text42 {
             display: inline-block;
           }
-          .home-src-text43 {
+          .home-text43 {
             display: inline-block;
           }
-          .home-src-text44 {
+          .home-text44 {
             display: inline-block;
           }
-          .home-src-text45 {
+          .home-text45 {
             display: inline-block;
           }
-          .home-src-text46 {
+          .home-text46 {
             display: inline-block;
           }
-          .home-src-text47 {
+          .home-text47 {
             display: inline-block;
           }
-          .home-src-text48 {
+          .home-text48 {
             display: inline-block;
           }
-          .home-src-text49 {
+          .home-text49 {
             display: inline-block;
           }
-          .home-src-text50 {
+          .home-text50 {
             display: inline-block;
           }
-          .home-src-text51 {
+          .home-text51 {
             display: inline-block;
           }
-          .home-src-text52 {
+          .home-text52 {
             display: inline-block;
           }
-          .home-src-text53 {
+          .home-text53 {
             display: inline-block;
           }
-          .home-src-text54 {
+          .home-text54 {
             display: inline-block;
           }
-          .home-src-text55 {
+          .home-text55 {
             display: inline-block;
           }
-          .home-src-text56 {
+          .home-text56 {
             display: inline-block;
           }
-          .home-src-text57 {
+          .home-text57 {
             display: inline-block;
           }
-          .home-src-text58 {
+          .home-text58 {
             display: inline-block;
           }
-          .home-src-text59 {
+          .home-text59 {
             display: inline-block;
           }
-          .home-src-text60 {
+          .home-text60 {
             display: inline-block;
           }
-          .home-src-text61 {
+          .home-text61 {
             display: inline-block;
           }
-          .home-src-text62 {
+          .home-text62 {
             display: inline-block;
           }
-          .home-src-text63 {
+          .home-text63 {
             display: inline-block;
           }
-          .home-src-text64 {
-            display: inline-block;
-          }
-          .home-src-text65 {
-            display: inline-block;
-          }
-          .home-src-text66 {
-            display: inline-block;
-          }
-          .home-src-text67 {
-            display: inline-block;
-          }
-          .home-src-text68 {
-            display: inline-block;
-          }
-          .home-src-text69 {
-            display: inline-block;
-          }
-          .home-src-text70 {
-            display: inline-block;
-          }
-          .home-src-text71 {
-            display: inline-block;
-          }
-          .home-src-text72 {
-            display: inline-block;
-          }
-          .home-src-text73 {
+          .home-text64 {
             display: inline-block;
           }
         `}
@@ -938,7 +814,7 @@ const HomeSrc = (props) => {
   )
 }
 
-export default HomeSrc
+export default Home
 
 export async function getStaticProps(context) {
   const messages = (await import('/locales/' + context.locale + '.json'))

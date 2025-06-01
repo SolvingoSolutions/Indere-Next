@@ -29,6 +29,12 @@ class CustomDocument extends Document {
             href="https://unpkg.com/animate.css@4.1.1/animate.css"
           ></link>
           <link
+            rel="shortcut icon"
+            href="/favicon.png"
+            type="icon/png"
+            sizes="32x32"
+          ></link>
+          <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
             data-tag="font"
@@ -42,12 +48,6 @@ class CustomDocument extends Document {
             rel="stylesheet"
             href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
           ></link>
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html:
-                '</noscript><style>\n@keyframes fade-in-left {\n  0% {\n    opacity: 0;\n    transform: translateX(-20px);\n  }\n  100% {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n</style>\n        <style>[data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {\n    display: flex;\n  }\n\n  [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {\n    transform: rotate(90deg);\n  }</style><noscript>',
-            }}
-          ></noscript>
         </Head>
         <body>
           <Main></Main>

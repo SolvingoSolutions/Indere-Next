@@ -6,8 +6,8 @@ const GlobalContext = createContext(null)
 
 export const GlobalProvider = ({ initialLocales, children }) => {
   const localeValue = useLocale()
-  const [locales, setLocales] = useState(initialLocales ?? [{"name":"English","short":"en"}])
-  const [locale, setLocale] = useState({"name":"English","short":"en"})
+  const [locales, setLocales] = useState(initialLocales ?? [{"name":"English","short":"en"},{"name":"Hungarian","short":"hu"}])
+  const [locale, setLocale] = useState({"name":"Hungarian","short":"hu"})
   
   useEffect(() => {
     if (!locales) {
