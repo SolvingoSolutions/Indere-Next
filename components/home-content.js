@@ -316,7 +316,7 @@ const HomeContent = (props) => {
                   'query MyQuery($first: Int, $after: String, $locale: String){allNews(locale: $locale,first: $first, after: $after){pageInfo{endCursor,hasNextPage,hasPreviousPage}edges{node{_meta{createdAt updatedAt id}body{json connections{__typename  }}slug tags title heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}imageTitle}}}}',
                 locale: props?.locale ?? '',
                 page: 1,
-                perPage: 100,
+                perPage: 6,
               }}
             />
             <div className="blog-cta">
