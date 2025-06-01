@@ -118,20 +118,25 @@ const ScientificProjects = (props) => {
           rootClassName="navbarroot-class-name4"
         ></Navbar>
         <section className="projects-intro">
-          <h1 className="research-title">
-            <span>Kutatócsoportokok</span>
-            <br />
-          </h1>
+          <section className="projects-intro">
+            <h1 className="scientific-projects-text109 research-title">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: translate.raw('text_CxlbMV'),
+                }}
+              ></span>
+            </h1>
+          </section>
           <div className="projects-intro-container">
             <div className="projects-intro-content">
-              <p className="scientific-projects-text112">
+              <p className="scientific-projects-text110">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_juthWu'),
                   }}
                 ></span>
               </p>
-              <p className="scientific-projects-text113">
+              <p className="scientific-projects-text111">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_5RK8I8'),
@@ -926,7 +931,7 @@ const ScientificProjects = (props) => {
         <Footer1
           text={
             <Fragment>
-              <span className="scientific-projects-text194">
+              <span className="scientific-projects-text192">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_lCILj_'),
@@ -937,7 +942,7 @@ const ScientificProjects = (props) => {
           }
           text1={
             <Fragment>
-              <span className="scientific-projects-text195">
+              <span className="scientific-projects-text193">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_xyjgVM'),
@@ -948,7 +953,7 @@ const ScientificProjects = (props) => {
           }
           text2={
             <Fragment>
-              <span className="scientific-projects-text196">
+              <span className="scientific-projects-text194">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_eieIHL'),
@@ -959,7 +964,7 @@ const ScientificProjects = (props) => {
           }
           text3={
             <Fragment>
-              <span className="scientific-projects-text197">
+              <span className="scientific-projects-text195">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_JGo3Mh'),
@@ -970,7 +975,7 @@ const ScientificProjects = (props) => {
           }
           text7={
             <Fragment>
-              <span className="scientific-projects-text198">
+              <span className="scientific-projects-text196">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_yoaPWF'),
@@ -981,7 +986,7 @@ const ScientificProjects = (props) => {
           }
           text8={
             <Fragment>
-              <span className="scientific-projects-text199">
+              <span className="scientific-projects-text197">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_zmdGK9'),
@@ -992,7 +997,7 @@ const ScientificProjects = (props) => {
           }
           text9={
             <Fragment>
-              <span className="scientific-projects-text200">
+              <span className="scientific-projects-text198">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_4a77jf'),
@@ -1001,34 +1006,12 @@ const ScientificProjects = (props) => {
               </span>
             </Fragment>
           }
-          text11={
-            <Fragment>
-              <span className="scientific-projects-text201">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_659swf'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
-          text12={
-            <Fragment>
-              <span className="scientific-projects-text202">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_HexW-e'),
-                  }}
-                ></span>
-              </span>
-            </Fragment>
-          }
           text13={
             <Fragment>
-              <span className="scientific-projects-text203">
+              <span className="scientific-projects-text199">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_TyKjpY'),
+                    __html: translate.raw('text_R-tL9Z'),
                   }}
                 ></span>
               </span>
@@ -1036,10 +1019,10 @@ const ScientificProjects = (props) => {
           }
           text14={
             <Fragment>
-              <span className="scientific-projects-text204">
+              <span className="scientific-projects-text200">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: translate.raw('text_T0OJhn'),
+                    __html: translate.raw('text_lqCWAX'),
                   }}
                 ></span>
               </span>
@@ -1047,7 +1030,7 @@ const ScientificProjects = (props) => {
           }
           text91={
             <Fragment>
-              <span className="scientific-projects-text205">
+              <span className="scientific-projects-text201">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_819RpL'),
@@ -1058,7 +1041,7 @@ const ScientificProjects = (props) => {
           }
           heading={
             <Fragment>
-              <span className="scientific-projects-text206">
+              <span className="scientific-projects-text202">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_94eMH6'),
@@ -1067,9 +1050,42 @@ const ScientificProjects = (props) => {
               </span>
             </Fragment>
           }
+          text131={
+            <Fragment>
+              <span className="scientific-projects-text203">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_ckO-bT'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text132={
+            <Fragment>
+              <span className="scientific-projects-text204">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_hDkoVw'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
+          text133={
+            <Fragment>
+              <span className="scientific-projects-text205">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: translate.raw('text_7t8fzn'),
+                  }}
+                ></span>
+              </span>
+            </Fragment>
+          }
           heading1={
             <Fragment>
-              <span className="scientific-projects-text207">
+              <span className="scientific-projects-text206">
                 <span
                   dangerouslySetInnerHTML={{
                     __html: translate.raw('text_1c9IFA'),
@@ -1117,6 +1133,15 @@ const ScientificProjects = (props) => {
           .scientific-projects-text108 {
             display: inline-block;
           }
+          .scientific-projects-text109 {
+            margin: 0;
+          }
+          .scientific-projects-text192 {
+            display: inline-block;
+          }
+          .scientific-projects-text193 {
+            display: inline-block;
+          }
           .scientific-projects-text194 {
             display: inline-block;
           }
@@ -1156,14 +1181,11 @@ const ScientificProjects = (props) => {
           .scientific-projects-text206 {
             display: inline-block;
           }
-          .scientific-projects-text207 {
-            display: inline-block;
-          }
           @media (max-width: 1600px) {
-            .scientific-projects-text112 {
+            .scientific-projects-text110 {
               text-align: justify;
             }
-            .scientific-projects-text113 {
+            .scientific-projects-text111 {
               text-align: justify;
             }
           }

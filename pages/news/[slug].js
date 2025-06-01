@@ -17,14 +17,14 @@ import { useTranslations } from 'next-intl'
 import Navbar from '../../components/navbar'
 import Footer1 from '../../components/footer1'
 
-const News11 = (props) => {
+const News1 = (props) => {
   const translate = useTranslations()
   return (
     <>
-      <div className="news11-container1">
+      <div className="news1-container1">
         <Head>
-          <title>News1 - Indere</title>
-          <meta property="og:title" content="News1 - Indere" />
+          <title>News - Indere</title>
+          <meta property="og:title" content="News - Indere" />
         </Head>
         <DataProvider
           renderSuccess={(NewsEntity) => (
@@ -32,7 +32,7 @@ const News11 = (props) => {
               <Navbar
                 link1={
                   <Fragment>
-                    <span className="news11-text10">
+                    <span className="news1-text10">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_G9ZC_4'),
@@ -43,7 +43,7 @@ const News11 = (props) => {
                 }
                 link2={
                   <Fragment>
-                    <span className="news11-text11">
+                    <span className="news1-text11">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_5RkFr5'),
@@ -54,7 +54,7 @@ const News11 = (props) => {
                 }
                 link3={
                   <Fragment>
-                    <span className="news11-text12">
+                    <span className="news1-text12">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_UQdAx8'),
@@ -65,7 +65,7 @@ const News11 = (props) => {
                 }
                 link4={
                   <Fragment>
-                    <span className="news11-text13">
+                    <span className="news1-text13">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_ymO1wG'),
@@ -76,7 +76,7 @@ const News11 = (props) => {
                 }
                 link5={
                   <Fragment>
-                    <span className="news11-text14">
+                    <span className="news1-text14">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_vquaLG'),
@@ -87,7 +87,7 @@ const News11 = (props) => {
                 }
                 text2={
                   <Fragment>
-                    <span className="news11-text15">
+                    <span className="news1-text15">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_z0Cvp2'),
@@ -98,7 +98,7 @@ const News11 = (props) => {
                 }
                 text3={
                   <Fragment>
-                    <span className="news11-text16">
+                    <span className="news1-text16">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_kKoO7s'),
@@ -109,7 +109,7 @@ const News11 = (props) => {
                 }
                 text4={
                   <Fragment>
-                    <span className="news11-text17">
+                    <span className="news1-text17">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_tyN-n4'),
@@ -120,7 +120,7 @@ const News11 = (props) => {
                 }
                 text5={
                   <Fragment>
-                    <span className="news11-text18">
+                    <span className="news1-text18">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_sOY0Mm'),
@@ -131,28 +131,73 @@ const News11 = (props) => {
                 }
                 rootClassName="navbarroot-class-name1"
               ></Navbar>
-              <div className="news11-container2">
-                <h1>{NewsEntity?.title}</h1>
-                <span>{NewsEntity?.updatedAt}</span>
-                <img
-                  alt="image"
-                  src={NewsEntity?.heroImage?.url}
-                  className="news11-image"
-                />
-                <span>{NewsEntity?.imageTitle}</span>
-                <div>
-                  <RichTextRenderer
-                    node={NewsEntity?.body}
-                    overwrites={{
-                      documentLink: CaisyDocumentLink,
-                    }}
-                  ></RichTextRenderer>
+              <article className="blog-article">
+                <div className="blog-article-container">
+                  <header className="blog-article-header">
+                    <h1 className="blog-article-title">{NewsEntity?.title}</h1>
+                    <div className="blog-article-meta">
+                      <span className="blog-article-date">
+                        {NewsEntity?.updatedAt}
+                      </span>
+                    </div>
+                  </header>
+                  <div className="blog-article-image">
+                    <img
+                      alt="Bowls of gluten free flour"
+                      src={NewsEntity?.heroImage?.url}
+                    />
+                    <p className="blog-article-image-caption">
+                      {NewsEntity?.imageTitle}
+                    </p>
+                  </div>
+                  <div>
+                    <RichTextRenderer
+                      node={NewsEntity?.body}
+                      overwrites={{
+                        documentLink: CaisyDocumentLink,
+                      }}
+                    ></RichTextRenderer>
+                  </div>
+                  <nav className="blog-article-navigation">
+                    <span className="blog-nav-btn blog-nav-prev">
+                      <span className="news1-text23">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_M02qjr'),
+                          }}
+                        ></span>
+                      </span>
+                      <span className="news1-text24">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_wuYJo1'),
+                          }}
+                        ></span>
+                      </span>
+                    </span>
+                    <span className="blog-nav-next blog-nav-btn">
+                      <span className="news1-text26">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_hB1MAr'),
+                          }}
+                        ></span>
+                      </span>
+                      <span className="news1-text27">
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: translate.raw('text_Drpytc'),
+                          }}
+                        ></span>
+                      </span>
+                    </span>
+                  </nav>
                 </div>
-              </div>
+              </article>
               <Footer1
                 text={
                   <Fragment>
-                    <span className="news11-text22">
+                    <span className="news1-text28">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text__w7kAl'),
@@ -163,7 +208,7 @@ const News11 = (props) => {
                 }
                 text1={
                   <Fragment>
-                    <span className="news11-text23">
+                    <span className="news1-text29">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_7_zEJJ'),
@@ -174,7 +219,7 @@ const News11 = (props) => {
                 }
                 text2={
                   <Fragment>
-                    <span className="news11-text24">
+                    <span className="news1-text30">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_77MrIX'),
@@ -185,7 +230,7 @@ const News11 = (props) => {
                 }
                 text3={
                   <Fragment>
-                    <span className="news11-text25">
+                    <span className="news1-text31">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_uJaI-z'),
@@ -196,7 +241,7 @@ const News11 = (props) => {
                 }
                 text7={
                   <Fragment>
-                    <span className="news11-text26">
+                    <span className="news1-text32">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_9SFoAz'),
@@ -207,7 +252,7 @@ const News11 = (props) => {
                 }
                 text8={
                   <Fragment>
-                    <span className="news11-text27">
+                    <span className="news1-text33">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_2FBG_H'),
@@ -218,7 +263,7 @@ const News11 = (props) => {
                 }
                 text9={
                   <Fragment>
-                    <span className="news11-text28">
+                    <span className="news1-text34">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_B7YZuf'),
@@ -227,34 +272,12 @@ const News11 = (props) => {
                     </span>
                   </Fragment>
                 }
-                text11={
-                  <Fragment>
-                    <span className="news11-text29">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: translate.raw('text_-E-kRE'),
-                        }}
-                      ></span>
-                    </span>
-                  </Fragment>
-                }
-                text12={
-                  <Fragment>
-                    <span className="news11-text30">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: translate.raw('text_F3ZwdV'),
-                        }}
-                      ></span>
-                    </span>
-                  </Fragment>
-                }
                 text13={
                   <Fragment>
-                    <span className="news11-text31">
+                    <span className="news1-text35">
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: translate.raw('text_kmJC7M'),
+                          __html: translate.raw('text_X6QMBs'),
                         }}
                       ></span>
                     </span>
@@ -262,10 +285,10 @@ const News11 = (props) => {
                 }
                 text14={
                   <Fragment>
-                    <span className="news11-text32">
+                    <span className="news1-text36">
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: translate.raw('text_1nkKd9'),
+                          __html: translate.raw('text_cSCeDW'),
                         }}
                       ></span>
                     </span>
@@ -273,7 +296,7 @@ const News11 = (props) => {
                 }
                 text91={
                   <Fragment>
-                    <span className="news11-text33">
+                    <span className="news1-text37">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_ZgPwhz'),
@@ -284,7 +307,7 @@ const News11 = (props) => {
                 }
                 heading={
                   <Fragment>
-                    <span className="news11-text34">
+                    <span className="news1-text38">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_j05bsS'),
@@ -293,9 +316,42 @@ const News11 = (props) => {
                     </span>
                   </Fragment>
                 }
+                text131={
+                  <Fragment>
+                    <span className="news1-text39">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text__25iag'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                text132={
+                  <Fragment>
+                    <span className="news1-text40">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_ArasMd'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
+                text133={
+                  <Fragment>
+                    <span className="news1-text41">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: translate.raw('text_IuDR3-'),
+                        }}
+                      ></span>
+                    </span>
+                  </Fragment>
+                }
                 heading1={
                   <Fragment>
-                    <span className="news11-text35">
+                    <span className="news1-text42">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_J4-MdD'),
@@ -315,91 +371,106 @@ const News11 = (props) => {
       </div>
       <style jsx>
         {`
-          .news11-container1 {
+          .news1-container1 {
             width: 100%;
             display: flex;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
           }
-          .news11-text10 {
+          .news1-text10 {
             display: inline-block;
           }
-          .news11-text11 {
+          .news1-text11 {
             display: inline-block;
           }
-          .news11-text12 {
+          .news1-text12 {
             display: inline-block;
           }
-          .news11-text13 {
+          .news1-text13 {
             display: inline-block;
           }
-          .news11-text14 {
+          .news1-text14 {
             display: inline-block;
           }
-          .news11-text15 {
+          .news1-text15 {
             display: inline-block;
           }
-          .news11-text16 {
+          .news1-text16 {
             display: inline-block;
           }
-          .news11-text17 {
+          .news1-text17 {
             display: inline-block;
           }
-          .news11-text18 {
+          .news1-text18 {
             display: inline-block;
           }
-          .news11-container2 {
-            gap: 12px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+          .news1-text23 {
+            font-size: 1.2rem;
+            font-weight: bold;
           }
-          .news11-image {
-            width: 200px;
-            object-fit: cover;
+          .news1-text24 {
+            font-size: 0.95rem;
           }
-          .news11-text22 {
+          .news1-text26 {
+            font-size: 0.95rem;
+          }
+          .news1-text27 {
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          .news1-text28 {
             display: inline-block;
           }
-          .news11-text23 {
+          .news1-text29 {
             display: inline-block;
           }
-          .news11-text24 {
+          .news1-text30 {
             display: inline-block;
           }
-          .news11-text25 {
+          .news1-text31 {
             display: inline-block;
           }
-          .news11-text26 {
+          .news1-text32 {
             display: inline-block;
           }
-          .news11-text27 {
+          .news1-text33 {
             display: inline-block;
           }
-          .news11-text28 {
+          .news1-text34 {
             display: inline-block;
           }
-          .news11-text29 {
+          .news1-text35 {
             display: inline-block;
           }
-          .news11-text30 {
+          .news1-text36 {
             display: inline-block;
           }
-          .news11-text31 {
+          .news1-text37 {
             display: inline-block;
           }
-          .news11-text32 {
+          .news1-text38 {
             display: inline-block;
           }
-          .news11-text33 {
+          .news1-text39 {
             display: inline-block;
           }
-          .news11-text34 {
+          .news1-text40 {
             display: inline-block;
           }
-          .news11-text35 {
+          .news1-text41 {
             display: inline-block;
+          }
+          .news1-text42 {
+            display: inline-block;
+          }
+          @media (max-width: 479px) {
+            .news1-text24 {
+              font-size: 0.9rem;
+            }
+            .news1-text26 {
+              font-size: 0.9rem;
+            }
           }
         `}
       </style>
@@ -407,15 +478,15 @@ const News11 = (props) => {
   )
 }
 
-News11.defaultProps = {
+News1.defaultProps = {
   newsEntity: [],
 }
 
-News11.propTypes = {
+News1.propTypes = {
   newsEntity: PropTypes.array,
 }
 
-export default News11
+export default News1
 
 export async function getStaticProps(context) {
   try {
@@ -428,7 +499,7 @@ export async function getStaticProps(context) {
       }),
       projectId: '1f01710c-9be4-418c-bc66-6fd9fc8b8d20',
       query:
-        'query MyQuery($value:String,$locale:String){allNews(locale:$locale, where: {slug:{eq: $value}}){edges{node{_meta{createdAt updatedAt id}body{json connections{__typename  }}slug tags title heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}imageTitle}}}}',
+        'query MyQuery($value:String,$locale:String){allNews(locale:$locale, where: {slug:{eq: $value}}){edges{node{_meta{createdAt updatedAt id}title body{json connections{__typename  }}imageTitle heroImage{__typename _meta{createdAt updatedAt id}description height id src title width}slug tags }}}}',
       attribute: 'slug',
       locale: context?.locale ?? '',
     })
@@ -443,7 +514,6 @@ export async function getStaticProps(context) {
         newsEntity: response?.data?.[0],
         ...response?.meta,
       },
-      revalidate: 60,
     }
   } catch (error) {
     console.log(error)

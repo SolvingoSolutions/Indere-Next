@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 import { useTranslations } from 'next-intl'
@@ -24,7 +25,7 @@ const Footer1 = (props) => {
               <p className="footer-description">
                 {props.text1 ?? (
                   <Fragment>
-                    <span className="footer1-text36">
+                    <span className="footer1-text38">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_iQ7qjf'),
@@ -57,7 +58,7 @@ const Footer1 = (props) => {
               <h4 className="footer-title">
                 {props.heading ?? (
                   <Fragment>
-                    <span className="footer1-text35">
+                    <span className="footer1-text36">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_XF38c4'),
@@ -71,7 +72,7 @@ const Footer1 = (props) => {
                 <p>
                   {props.text7 ?? (
                     <Fragment>
-                      <span className="footer1-text30">
+                      <span className="footer1-text31">
                         <span
                           dangerouslySetInnerHTML={{
                             __html: translate.raw('text_MSxNfS'),
@@ -84,7 +85,7 @@ const Footer1 = (props) => {
                 <p>
                   {props.text8 ?? (
                     <Fragment>
-                      <span className="footer1-text25">
+                      <span className="footer1-text26">
                         <span
                           dangerouslySetInnerHTML={{
                             __html: translate.raw('text_K2yt-b'),
@@ -102,7 +103,7 @@ const Footer1 = (props) => {
                   <p className="footer1-text14">
                     {props.text9 ?? (
                       <Fragment>
-                        <span className="footer1-text24">
+                        <span className="footer1-text25">
                           <span
                             dangerouslySetInnerHTML={{
                               __html: translate.raw('text_xMxFMq'),
@@ -121,7 +122,7 @@ const Footer1 = (props) => {
                   <p className="footer1-text15">
                     {props.text91 ?? (
                       <Fragment>
-                        <span className="footer1-text29">
+                        <span className="footer1-text30">
                           <span
                             dangerouslySetInnerHTML={{
                               __html: translate.raw('text_gZXGVR'),
@@ -138,7 +139,7 @@ const Footer1 = (props) => {
               <h4 className="footer-title">
                 {props.heading1 ?? (
                   <Fragment>
-                    <span className="footer1-text26">
+                    <span className="footer1-text27">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_DNYdMS'),
@@ -150,64 +151,99 @@ const Footer1 = (props) => {
               </h4>
               <ul className="footer-links list">
                 <li className="list-item">
-                  <span>
-                    {props.text11 ?? (
-                      <Fragment>
-                        <span className="footer1-text31">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_QH6sFn'),
-                            }}
-                          ></span>
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
+                  <Link href="/">
+                    <a>
+                      <span className="footer1-text17">
+                        {props.text133 ?? (
+                          <Fragment>
+                            <span className="footer1-text39">
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: translate.raw('text_Pcfag2'),
+                                }}
+                              ></span>
+                            </span>
+                          </Fragment>
+                        )}
+                      </span>
+                    </a>
+                  </Link>
                 </li>
                 <li className="list-item">
-                  <span>
-                    {props.text12 ?? (
-                      <Fragment>
-                        <span className="footer1-text37">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_WDL83X'),
-                            }}
-                          ></span>
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
+                  <Link href="/about-us">
+                    <a>
+                      <span className="footer1-text18">
+                        {props.text13 ?? (
+                          <Fragment>
+                            <span className="footer1-text28">
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: translate.raw('text_bNNDRY'),
+                                }}
+                              ></span>
+                            </span>
+                          </Fragment>
+                        )}
+                      </span>
+                    </a>
+                  </Link>
                 </li>
                 <li className="list-item">
-                  <span>
-                    {props.text13 ?? (
-                      <Fragment>
-                        <span className="footer1-text27">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_bNNDRY'),
-                            }}
-                          ></span>
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
+                  <Link href="/">
+                    <a>
+                      <span className="footer1-text19">
+                        {props.text14 ?? (
+                          <Fragment>
+                            <span className="footer1-text33">
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: translate.raw('text_y_16Hf'),
+                                }}
+                              ></span>
+                            </span>
+                          </Fragment>
+                        )}
+                      </span>
+                    </a>
+                  </Link>
                 </li>
                 <li className="list-item">
-                  <span>
-                    {props.text14 ?? (
-                      <Fragment>
-                        <span className="footer1-text32">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: translate.raw('text_y_16Hf'),
-                            }}
-                          ></span>
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
+                  <Link href="/scientific-projects">
+                    <a>
+                      <span className="footer1-text20">
+                        {props.text131 ?? (
+                          <Fragment>
+                            <span className="footer1-text32">
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: translate.raw('text_uVCWEI'),
+                                }}
+                              ></span>
+                            </span>
+                          </Fragment>
+                        )}
+                      </span>
+                    </a>
+                  </Link>
+                </li>
+                <li className="list-item">
+                  <Link href="/news">
+                    <a>
+                      <span className="footer1-text21">
+                        {props.text132 ?? (
+                          <Fragment>
+                            <span className="footer1-text37">
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: translate.raw('text_HjEYQq'),
+                                }}
+                              ></span>
+                            </span>
+                          </Fragment>
+                        )}
+                      </span>
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -216,7 +252,7 @@ const Footer1 = (props) => {
             <p className="footer-copyright">
               {props.text ?? (
                 <Fragment>
-                  <span className="footer1-text33">
+                  <span className="footer1-text34">
                     <span
                       dangerouslySetInnerHTML={{
                         __html: translate.raw('text_mNusEc'),
@@ -232,10 +268,10 @@ const Footer1 = (props) => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <span className="footer1-text22">
+                <span className="footer1-text23">
                   {props.text2 ?? (
                     <Fragment>
-                      <span className="footer1-text34">
+                      <span className="footer1-text35">
                         <span
                           dangerouslySetInnerHTML={{
                             __html: translate.raw('text_ayJbfC'),
@@ -246,10 +282,10 @@ const Footer1 = (props) => {
                   )}
                 </span>
               </a>
-              <span className="footer1-text23">
+              <span className="footer1-text24">
                 {props.text3 ?? (
                   <Fragment>
-                    <span className="footer1-text28">
+                    <span className="footer1-text29">
                       <span
                         dangerouslySetInnerHTML={{
                           __html: translate.raw('text_4JUfvA'),
@@ -287,15 +323,27 @@ const Footer1 = (props) => {
             cursor: pointer;
             text-decoration: none;
           }
-          .footer1-text22 {
-            cursor: pointer;
+          .footer1-text17 {
+            text-decoration: none;
+          }
+          .footer1-text18 {
+            text-decoration: none;
+          }
+          .footer1-text19 {
+            text-decoration: none;
+          }
+          .footer1-text20 {
+            text-decoration: none;
+          }
+          .footer1-text21 {
             text-decoration: none;
           }
           .footer1-text23 {
-            display: none;
+            cursor: pointer;
+            text-decoration: none;
           }
           .footer1-text24 {
-            display: inline-block;
+            display: none;
           }
           .footer1-text25 {
             display: inline-block;
@@ -336,6 +384,12 @@ const Footer1 = (props) => {
           .footer1-text37 {
             display: inline-block;
           }
+          .footer1-text38 {
+            display: inline-block;
+          }
+          .footer1-text39 {
+            display: inline-block;
+          }
         `}
       </style>
     </>
@@ -351,14 +405,15 @@ Footer1.defaultProps = {
   text3: undefined,
   text91: undefined,
   text7: undefined,
-  text11: undefined,
+  text131: undefined,
   text14: undefined,
   text: undefined,
   text2: undefined,
   heading: undefined,
   imageAlt: 'Food Control',
+  text132: undefined,
   text1: undefined,
-  text12: undefined,
+  text133: undefined,
   facebookLink1: '',
 }
 
@@ -371,14 +426,15 @@ Footer1.propTypes = {
   text3: PropTypes.element,
   text91: PropTypes.element,
   text7: PropTypes.element,
-  text11: PropTypes.element,
+  text131: PropTypes.element,
   text14: PropTypes.element,
   text: PropTypes.element,
   text2: PropTypes.element,
   heading: PropTypes.element,
   imageAlt: PropTypes.string,
+  text132: PropTypes.element,
   text1: PropTypes.element,
-  text12: PropTypes.element,
+  text133: PropTypes.element,
   facebookLink1: PropTypes.string,
 }
 

@@ -78,7 +78,12 @@ const Navbar = (props) => {
                     )}
                   </a>
                 </Link>
-                <span className="navbar-link18 nav-link">
+                <a
+                  href="https://kapinfood.hu/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="navbar-link18 nav-link"
+                >
                   {props.link2 ?? (
                     <Fragment>
                       <span className="navbar-text16">
@@ -90,7 +95,7 @@ const Navbar = (props) => {
                       </span>
                     </Fragment>
                   )}
-                </span>
+                </a>
                 <Link href="/news">
                   <a className="navbar-link20 nav-link">
                     {props.link3 ?? (
@@ -323,6 +328,7 @@ const Navbar = (props) => {
             transition: 0.3s;
             font-weight: 500;
             line-height: 24px;
+            text-decoration: none;
           }
           .navbar-link18:hover {
             opacity: 0.5;
